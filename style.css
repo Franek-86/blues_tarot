@@ -289,12 +289,11 @@
 @media screen and (max-width: 1000px) {
   .text-container {
     left: calc(150px + 0.875rem);
-    width: 35vw;
-    min-width: 200px;
+    width: 30vw;
   }
-  .text-container p {
+  /* .text-container p {
     width: 60vw;
-  }
+  } */
 }
 @media screen and (max-width: 600px) {
   .main {
@@ -373,17 +372,17 @@
 }
 @media screen and (max-width: 600px) {
   .seventh-name {
-    width: 123%;
+    width: 119%;
     height: 10%;
     background-color: #cf74ad;
   }
   .ninth-name {
-    width: 123%;
+    width: 119%;
     height: 10%;
     background-color: #cf74ad;
   }
   .eleventh-name {
-    width: 123%;
+    width: 119%;
     height: 10%;
     background-color: #cf74ad;
   }
