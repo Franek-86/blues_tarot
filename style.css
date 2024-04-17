@@ -261,7 +261,7 @@
 @media screen and (max-width: 1000px) {
   .fullName-container {
     height: 120%;
-    width: 12rem;
+    width: 11.75rem;
     font-size: 1rem;
     top: -10px;
   }
