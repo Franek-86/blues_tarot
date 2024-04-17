@@ -1,0 +1,736 @@
+@import url("https://fonts.cdnfonts.com/css/hobo-bt");
+@import url("https://fonts.cdnfonts.com/css/myriad-pro");
+@import url("https://fonts.cdnfonts.com/css/myriad-web-pro");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: 7rem;
+  color: #66cdcc;
+  text-transform: uppercase;
+  font-family: "Hobo BT", sans-serif;
+  text-shadow: -0.5rem -0.3rem #7642be;
+}
+
+.subtitle {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+  color: #993365;
+  text-align: center;
+  margin-top: 3.5rem;
+  font-size: larger;
+  font-size: 2rem;
+}
+
+.first {
+  background-color: #993365;
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  height: 45%;
+  z-index: 0;
+  top: 0;
+}
+.second {
+  background-color: #f5999a;
+  top: 42%;
+  position: absolute;
+  width: 90%;
+  height: 26%;
+  z-index: 1;
+}
+.third {
+  background-color: #ee8244;
+  top: 50%;
+  position: absolute;
+  width: 80%;
+  left: 9%;
+  height: 70%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    min-width: 350px;
+    width: 95vw;
+    height: 5rem;
+  }
+
+  .title {
+    font-size: 2.8rem;
+    color: #66cdcc;
+    text-shadow: -0.5rem -0.3rem #7642be;
+  }
+  .subtitle {
+    margin-top: 1.3rem;
+    font-size: larger;
+    font-size: 1rem;
+  }
+  .second {
+    width: 100%;
+  }
+  .third {
+    width: 98%;
+    left: 1%;
+    height: 75%;
+  }
+}
+
+/* .main-background {
+  background-color: red;
+} */
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 42rem;
+  z-index: -1;
+}
+@media screen and (max-width: 1000px) {
+  .header-container {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 75vw;
+    margin: 0 auto;
+    z-index: -1;
+  }
+  img {
+    width: 150px;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 3rem;
+}
+.footer-container {
+  height: 3rem;
+  width: 40rem;
+}
+.footer-container::before {
+  content: "";
+  position: absolute;
+  height: 5rem;
+  width: 5px;
+  background-color: #f49a98ba;
+  transform: translate(3rem, -15%);
+}
+.footer-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 5rem;
+  width: 5px;
+  background-color: #f49a98ba;
+  transform: translate(0.85rem, -15%);
+}
+.footer-text h2 {
+  font-size: 1.65rem;
+}
+@media screen and (max-width: 1000px) {
+  .footer-text h2 {
+    font-size: 1.5rem;
+  }
+  /* .footer-container {
+    overflow: hidden;
+  } */
+}
+@media screen and (max-width: 768px) {
+  .footer-container {
+    height: 3rem;
+    width: 75vw;
+  }
+  .footer-text {
+    margin-left: 5%;
+  }
+  .footer-text h2 {
+    font-size: 1rem;
+  }
+  /* .footer-container {
+    overflow: hidden;
+  } */
+}
+.banner {
+  width: 40rem;
+  margin: 0 auto;
+  position: relative;
+}
+.main {
+  height: 65rem;
+  width: 40rem;
+  background-color: #993365;
+
+  transform: translateY(-25%);
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    width: 80vw;
+    height: 120vh;
+    min-width: 300px;
+  }
+  .banner {
+    width: 100vw;
+    min-width: 300px;
+
+    margin: 0 auto;
+    position: relative;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main {
+    height: 130vh;
+  }
+}
+.image-container {
+  position: absolute;
+  top: 1.175rem;
+  left: -4%;
+}
+@media screen and (max-width: 1000px) {
+  .image-container {
+    left: 0;
+  }
+}
+.name-container {
+  position: absolute;
+  top: 2rem;
+  left: calc(300px + 1rem);
+  width: 26rem;
+  height: 2.3rem;
+  z-index: 2;
+  /* background-color: red; */
+}
+
+@media screen and (max-width: 1000px) {
+  .name-container {
+    position: absolute;
+    width: 110%;
+    left: calc(150px + 0.875rem);
+  }
+  .name-container-mobile {
+    display: block;
+    position: absolute;
+    width: 110%;
+    top: 4rem;
+    left: calc(150px + 1rem);
+  }
+}
+.fullName-container {
+  font-family: "Myriad Pro", sans-serif;
+  position: absolute;
+  top: 0;
+  height: 120%;
+  width: 27rem;
+  font-size: 2.06rem;
+  line-height: 3rem;
+}
+@media screen and (max-width: 1000px) {
+  .fullName-container {
+    height: 120%;
+    width: 14rem;
+    font-size: 1rem;
+    top: -10px;
+  }
+  .name-container {
+    height: 1.2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fullName-container {
+    font-size: 0.9rem;
+  }
+}
+
+.text-container {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Myriad Web Pro", sans-serif; */
+  position: absolute;
+  top: calc(2rem + 4rem);
+  left: calc(300px + 1rem);
+  width: 20rem;
+  height: 3rem;
+  color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .text-container {
+    left: calc(150px + 0.875rem);
+    width: 35vw;
+    min-width: 200px;
+  }
+  .text-container p {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .main {
+    height: 100vh;
+    width: 85vw;
+  }
+  .text-container p {
+    width: 45vw;
+    max-width: 500px;
+  }
+  .hide-mobile {
+    display: none;
+  }
+  .date-resp {
+    margin-top: 0 !important;
+  }
+  .resp-footer-text {
+    display: block;
+  }
+}
+
+.first-name {
+  width: 110%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.second-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.third-name {
+  width: 110%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.forth-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.fifth-name {
+  width: 110%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.sixth-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.seventh-name {
+  width: 130%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.eight-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.ninth-name {
+  width: 130%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.tenth-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.eleventh-name {
+  width: 130%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.footer-text {
+  left: 50%;
+  right: 50%;
+  transform: translateX(-41%);
+  position: absolute;
+  color: #fff;
+  font-family: "Myriad Pro", sans-serif;
+  width: 90%;
+}
+
+.first-footer {
+  width: 110%;
+  height: 10%;
+  background-color: #f49a98ba;
+
+  margin-left: 2rem;
+}
+.second-footer {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.third-footer {
+  width: 110%;
+  height: 10%;
+  background-color: #f49a98ba;
+
+  margin-left: 2rem;
+}
+.forth-footer {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.fifth-footer {
+  width: 110%;
+  height: 10%;
+  background-color: #f49a98ba;
+
+  margin-left: 2rem;
+}
+.sixth-footer {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.seventh-footer {
+  width: 125%;
+  height: 10%;
+  background-color: #f49a98ba;
+  margin-left: -1.85rem;
+}
+.eight-footer {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.ninth-footer {
+  width: 125%;
+  height: 10%;
+  background-color: #f49a98ba;
+  background-color: ;
+  margin-left: -1.85rem;
+}
+.tenth-footer {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.eleventh-footer {
+  width: 125%;
+  height: 10%;
+  background-color: #f49a98ba;
+  margin-left: -1.85rem;
+}
+.end-footer-info {
+  position: absolute;
+  bottom: -3rem;
+  font-family: "Myriad Pro", sans-serif;
+  color: #993365;
+}
+.end-footer-other {
+  position: absolute;
+  bottom: -2.5rem;
+  right: -6rem;
+  width: 22rem;
+  height: 4rem;
+  background-color: #7642be;
+}
+@media screen and (max-width: 1000px) {
+  .end-footer-other {
+    right: -5%;
+    width: 15rem;
+    height: 4rem;
+  }
+  .end-footer-info p {
+    font-size: 0.875rem;
+  }
+  .text-container p {
+    font-size: 0.875rem;
+  }
+
+  .footer-one {
+    width: 1.25rem !important;
+    left: 16.25% !important;
+  }
+  .footer-two {
+    width: 1.25rem !important;
+    left: 26.25% !important;
+  }
+  .footer-three {
+    width: 1.25rem !important;
+    left: 36.25% !important;
+  }
+  .footer-four {
+    position: absolute;
+    width: 1.25rem !important;
+    background-color: #66cdcc;
+    border-radius: 5px;
+    height: 5rem;
+    top: 1.5rem;
+    left: 46.25% !important;
+  }
+
+  .footer-five {
+    position: absolute;
+    width: 1.25rem !important;
+    background-color: #66cdcc;
+    border-radius: 5px;
+    height: 5rem;
+    top: 1.5rem;
+    left: 56.25% !important;
+  }
+  .footer-six {
+    position: absolute;
+    width: 1.25rem !important;
+    background-color: #66cdcc;
+    border-radius: 5px;
+    height: 5rem;
+    top: 1.5rem;
+    left: 66.25% !important;
+  }
+  .footer-seven {
+    position: absolute;
+    width: 1.25rem !important;
+    background-color: #66cdcc;
+    border-radius: 5px;
+    height: 5rem;
+    top: 1.5rem;
+    left: 76.25% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .end-footer-other {
+    right: -7%;
+    width: 8.5rem;
+    height: 4rem;
+  }
+  .footer-one {
+    width: 0.875rem !important;
+    left: 5.5% !important;
+  }
+  .footer-two {
+    width: 0.875rem !important;
+    left: 18.75% !important;
+  }
+  .footer-three {
+    width: 0.875rem !important;
+    left: 32% !important;
+  }
+  .footer-four {
+    width: 0.875rem !important;
+    left: 45.25% !important;
+  }
+
+  .footer-five {
+    width: 0.875rem !important;
+    left: 58.5% !important;
+  }
+  .footer-six {
+    width: 0.875rem !important;
+    left: 71.75% !important;
+  }
+  .footer-seven {
+    width: 0.875rem !important;
+    left: 85% !important;
+  }
+}
+.footer-one {
+  position: absolute;
+  width: 2rem;
+  background-color: #66cdcc;
+  border-radius: 5px;
+  height: 5rem;
+  top: 1.5rem;
+  left: 1rem;
+}
+.footer-two {
+  position: absolute;
+  width: 2rem;
+  background-color: #66cdcc;
+  border-radius: 5px;
+  height: 5rem;
+  top: 1.5rem;
+  left: 4rem;
+}
+.footer-three {
+  position: absolute;
+  width: 2rem;
+  background-color: #66cdcc;
+  border-radius: 5px;
+  height: 5rem;
+  top: 1.5rem;
+  left: 7rem;
+}
+.footer-four {
+  position: absolute;
+  width: 2rem;
+  background-color: #66cdcc;
+  border-radius: 5px;
+  height: 5rem;
+  top: 1.5rem;
+  left: 10rem;
+}
+
+.footer-five {
+  position: absolute;
+  width: 2rem;
+  background-color: #66cdcc;
+  border-radius: 5px;
+  height: 5rem;
+  top: 1.5rem;
+  left: 13rem;
+}
+
+.footer-six {
+  position: absolute;
+  width: 2rem;
+  background-color: #66cdcc;
+  border-radius: 5px;
+  height: 5rem;
+  top: 1.5rem;
+  left: 16rem;
+}
+
+.footer-seven {
+  position: absolute;
+  width: 2rem;
+  background-color: #66cdcc;
+  border-radius: 5px;
+  height: 5rem;
+  top: 1.5rem;
+  left: 19rem;
+}
+/* balls */
+.big-ball-first {
+  top: -1rem;
+  position: absolute;
+  right: -4.85rem;
+  width: 120px;
+  height: 120px;
+  background-color: #993365;
+  border-radius: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 1000px) {
+  .big-ball-first {
+    display: none;
+  }
+}
+.big-ball-second {
+  position: absolute;
+  right: 30%;
+  top: 60%;
+  width: 100px;
+  height: 100px;
+  background-color: #ee8244;
+  border-radius: 100%;
+}
+.small-ball-1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  bottom: -3rem;
+  left: 1rem;
+  border: 5px solid #b0ceea;
+  border-radius: 100%;
+  /* border-radius: 100%; */
+}
+.small-ball-2,
+.small-ball-3,
+.small-ball-4,
+.small-ball-5,
+.small-ball-6 {
+  position: absolute;
+  top: 2.5rem;
+  left: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 5px solid #b0ceea;
+  border-radius: 100%;
+}
+.big-ball-third {
+  position: absolute;
+  top: 3rem;
+  left: -2rem;
+  background-color: transparent;
+  width: 140px;
+  height: 140px;
+  background-color: #993365;
+  border-radius: 100%;
+  border: 3px solid #ee8244;
+}
+
+@media screen and (max-width: 600px) {
+  .hide-custom {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .no-full {
+    display: none;
+  }
+}
+/* info */
+.info-subtitle {
+  font-size: 1.5rem;
+}
+.background-info {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("./images/blues\ tarots-01-le\ bateleur-01.png") no-repeat
+    fixed center;
+}
+.background-info::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.689);
+}
+.info {
+  color: #fff;
+
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  line-height: 1.275rem;
+}
+.info p {
+  margin: 2rem 1rem;
+}
+.info-link-container {
+  display: flex;
+  align-items: center;
+}
+.info-link {
+  font-family: "Hobo BT", sans-serif;
+  font-size: 0.875rem;
+  /* font-family: "Myriad Pro", sans-serif; */
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  margin: auto;
+  color: #993365;
+  border: 5px solid #993365;
+  border-radius: 15px;
+  padding: 0.675rem 1.175rem;
+}
