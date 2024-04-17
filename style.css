@@ -403,34 +403,51 @@
   height: 10%;
   background-color: transparent;
 }
-.seventh-footer {
+/* .seventh-footer {
   width: 125%;
   height: 10%;
   background-color: #f49a98ba;
   margin-left: -1.85rem;
+} */
+.seventh-footer {
+  width: 110%;
+  height: 10%;
+  background-color: #f49a98ba;
+  margin-left: 1.15rem;
 }
 .eight-footer {
   width: 100%;
   height: 10%;
   background-color: transparent;
 }
-.ninth-footer {
+/* .ninth-footer {
   width: 125%;
   height: 10%;
   background-color: #f49a98ba;
-  background-color: ;
   margin-left: -1.85rem;
+} */
+.ninth-footer {
+  width: 110%;
+  height: 10%;
+  background-color: #f49a98ba;
+  margin-left: 1.15rem;
 }
 .tenth-footer {
   width: 100%;
   height: 10%;
   background-color: transparent;
 }
-.eleventh-footer {
+/* .eleventh-footer {
   width: 125%;
   height: 10%;
   background-color: #f49a98ba;
   margin-left: -1.85rem;
+} */
+.eleventh-footer {
+  width: 110%;
+  height: 10%;
+  background-color: #f49a98ba;
+  margin-left: 1.15rem;
 }
 .end-footer-info {
   position: absolute;
