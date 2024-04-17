@@ -235,6 +235,20 @@
     left: calc(150px + 1rem);
   }
 }
+@media screen and (max-width: 500px) {
+  .name-container {
+    position: absolute;
+    width: 105%;
+    left: calc(150px + 0.875rem);
+  }
+  .name-container-mobile {
+    display: block;
+    position: absolute;
+    width: 110%;
+    top: 4rem;
+    left: calc(150px + 1rem);
+  }
+}
 .fullName-container {
   font-family: "Myriad Pro", sans-serif;
   position: absolute;
