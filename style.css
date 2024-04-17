@@ -371,6 +371,23 @@
   height: 10%;
   background-color: #cf74ad;
 }
+@media screen and (max-width: 600px) {
+  .seventh-name {
+    width: 123%;
+    height: 10%;
+    background-color: #cf74ad;
+  }
+  .ninth-name {
+    width: 123%;
+    height: 10%;
+    background-color: #cf74ad;
+  }
+  .eleventh-name {
+    width: 123%;
+    height: 10%;
+    background-color: #cf74ad;
+  }
+}
 .footer-text {
   left: 50%;
   right: 50%;
