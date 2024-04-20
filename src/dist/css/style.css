@@ -78,13 +78,12 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.lightbox .target *:first-child,
-.lightbox .target *:last-child {
+.lightbox .target .fas {
+  flex: 0 0 10rem;
   text-align: center;
 }
 @media all and (max-width: 600px) {
-  .lightbox .target *:first-child,
-  .lightbox .target *:last-child {
+  .lightbox .target .fas {
     flex: 0 0 50px;
   }
 }

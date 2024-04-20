@@ -77,10 +77,10 @@ body {
     transform: scale(0);
     align-items: center;
     justify-content: space-between;
-    *:first-child,
-    *:last-child {
-      // flex: 0 0 100px;
+    .fas {
+      flex: 0 0 10rem;
       text-align: center;
+
       @media all and (max-width: 600px) {
         flex: 0 0 50px;
       }
