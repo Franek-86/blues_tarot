@@ -274,7 +274,18 @@
     font-size: 0.9rem;
   }
 }
-
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .fullName {
+    width: 14rem;
+  }
+  .text-container {
+    width: 60vw !important;
+  }
+  .main {
+    /* border: 5px solid red;
+    width: 90vw !important; */
+  }
+}
 .text-container {
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
     "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -295,7 +306,7 @@
     width: 60vw;
   } */
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .main {
     height: 100vh;
     width: 85vw;
@@ -720,12 +731,12 @@
   border: 3px solid #ee8244;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .hide-custom {
     display: none;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .no-full {
     display: none;
   }
