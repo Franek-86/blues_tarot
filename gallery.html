@@ -3,7 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="./src/dist/css/style.css" />
+
     <script
       src="https://kit.fontawesome.com/dabbc446c6.js"
       crossorigin="anonymous"
@@ -11,124 +19,540 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="thumbs">
-      <a href="#target1"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt="" alt=""
-      /></a>
-      <a href="#target2"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
-      /></a>
-      <a href="#target3"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
-      /></a>
-      <a href="#target4"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
-      /></a>
-      <a href="#target5"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
-      /></a>
-      <a href="#target6"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
-      /></a>
-      <a href="#target7"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
-      /></a>
-      <a href="#target8"
-        ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
-      /></a>
-    </div>
-
-    <div class="lightbox">
-      <div class="target" id="target1">
-        <span class="fas">
-          <!-- spacer to keep content centered in the flex container -->
-        </span>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <a href="#target2" title="next" class="fas nav"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
+    <!-- <article class="gallery-nav">
+      <div class="test-nav">qui</div>
+    </article> -->
+    <section class="arcani-maggiori">
+      <div class="text-center">
+        <h1 class="title">galleria</h1>
       </div>
-      <div class="target" id="target2">
-        <a href="#target1" title="previous" class="fas nav"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <a href="#target3" class="fas nav" title="next"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
-      </div>
-      <div class="target" id="target3">
-        <a href="#target2" class="fas nav" title="previous"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <a href="#target4" class="fas nav" title="next"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
-      </div>
-      <div class="target" id="target4">
-        <a href="#target3" class="fas nav" title="previous"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <a href="#target5" class="fas nav" title="next"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
-      </div>
-      <div class="target" id="target5">
-        <a href="#target4" class="fas nav" title="previous"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <a href="#target6" class="fas nav" title="next"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
-      </div>
-      <div class="target" id="target6">
-        <a href="#target5" class="fas nav" title="previous"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <a href="#target7" class="fas nav" title="next"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
-      </div>
-      <div class="target" id="target7">
-        <a href="#target6" class="fas nav" title="previous"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <a href="#target8" class="fas nav" title="next"
-          ><i class="fa-solid fa-chevron-right"></i
-        ></a>
-      </div>
-      <div class="target" id="target8">
-        <a href="#target7" class="fas nav" title="previous"
-          ><i class="fa-solid fa-chevron-left"></i
-        ></a>
-        <div class="content">
-          <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
-        </div>
-        <span class="fas">
-          <!-- spacer to keep content centered in the flex container -->
-        </span>
+      <div class="section-title text-center">
+        <h3>arcani maggiori</h3>
       </div>
 
-      <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+      <article class="gallery-container">
+        <div class="thumbs">
+          <a href="#target1"
+            ><img
+              src="./images/blues tarots-01-le bateleur-01.png"
+              alt=""
+              alt=""
+          /></a>
+          <a href="#target2"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target3"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target4"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target5"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target6"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target7"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target8"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target9"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target10"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target11"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target12"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target13"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target14"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target15"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target16"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target17"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target18"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target19"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target20"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target21"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+          <a href="#target22"
+            ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+          /></a>
+        </div>
+
+        <div class="lightbox">
+          <div class="target" id="target1">
+            <span class="fas">
+              <!-- spacer to keep content centered in the flex container -->
+            </span>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target2" title="next" class="fas nav"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target2">
+            <a href="#target1" title="previous" class="fas nav"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target3" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target3">
+            <a href="#target2" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target4" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target4">
+            <a href="#target3" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target5" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target5">
+            <a href="#target4" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target6" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target6">
+            <a href="#target5" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target7" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target7">
+            <a href="#target6" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target8" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target8">
+            <a href="#target7" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target9" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target9">
+            <a href="#target8" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target10" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target10">
+            <a href="#target9" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target11" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target11">
+            <a href="#target10" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target12" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target12">
+            <a href="#target11" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target13" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target13">
+            <a href="#target12" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target14" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target14">
+            <a href="#target13" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target15" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target15">
+            <a href="#target14" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target16" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target16">
+            <a href="#target15" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target17" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target17">
+            <a href="#target16" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target18" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target18">
+            <a href="#target17" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target19" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target19">
+            <a href="#target18" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target20" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target20">
+            <a href="#target19" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target21" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target21">
+            <a href="#target20" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <a href="#target22" class="fas nav" title="next"
+              ><i class="fa-solid fa-chevron-right"></i
+            ></a>
+          </div>
+          <div class="target" id="target22">
+            <a href="#target21" class="fas nav" title="previous"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="content">
+              <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+            </div>
+            <span></span>
+          </div>
+
+          <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+        </div>
+      </article>
+    </section>
+    <div class="section-title text-center">
+      <h3>bastoni</h3>
     </div>
+    <article class="gallery-container">
+      <div class="thumbs">
+        <a href="#target23"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt="" alt=""
+        /></a>
+        <a href="#target24"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target25"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target26"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target27"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target28"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target29"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target30"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target31"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target32"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target33"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target34"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target35"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+        <a href="#target36"
+          ><img src="./images/blues tarots-01-le bateleur-01.png" alt=""
+        /></a>
+      </div>
+      <div class="lightbox">
+        <div class="target" id="target23">
+          <span class="fas">
+            <!-- spacer to keep content centered in the flex container -->
+          </span>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target24" title="next" class="fas nav"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target24">
+          <a href="#target23" title="previous" class="fas nav"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target25" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target25">
+          <a href="#target24" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target26" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target26">
+          <a href="#targe25" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target27" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target27">
+          <a href="#target26" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target28" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target28">
+          <a href="#target27" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target29" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target29">
+          <a href="#target28" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target30" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target30">
+          <a href="#target29" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target31" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target31">
+          <a href="#target30" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target32" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target32">
+          <a href="#target31" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target33" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target33">
+          <a href="#target32" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target34" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target34">
+          <a href="#target33" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target35" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target35">
+          <a href="#target34" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <a href="#target36" class="fas nav" title="next"
+            ><i class="fa-solid fa-chevron-right"></i
+          ></a>
+        </div>
+        <div class="target" id="target36">
+          <a href="#target35" class="fas nav" title="previous"
+            ><i class="fa-solid fa-chevron-left"></i
+          ></a>
+          <div class="content">
+            <img src="./images/blues tarots-01-le bateleur-01.png" alt="" />
+          </div>
+          <span></span>
+        </div>
+
+        <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+      </div>
+    </article>
   </body>
 </html>
