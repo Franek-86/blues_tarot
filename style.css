@@ -824,16 +824,54 @@ body {
   .footer-loghi {
     width: 30rem;
 
-    bottom: -50rem;
+    bottom: -47rem;
+  }
+  .logo-container-1 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-2 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-3 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-4 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-5 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-6 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-7 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-8 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-9 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-10 {
+    width: 9rem !important;
+    height: 4rem !important;
+  }
+  .logo-container-11 {
+    width: 9rem !important;
+    height: 4rem !important;
   }
 }
-@media screen and (max-width: 520px) {
-  .footer-loghi {
-    width: 20rem;
 
-    bottom: -65rem;
-  }
-}
 .logo-container-1 {
   width: 10rem;
   height: 5rem;
