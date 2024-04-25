@@ -417,6 +417,26 @@ body {
     width: 180%;
   }
 }
+@media screen and (max-width: 600px) {
+  .first-name {
+    width: 160%;
+  }
+  .third-name {
+    width: 160%;
+  }
+  .fifth-name {
+    width: 160%;
+  }
+  .seventh-name {
+    width: 170%;
+  }
+  .ninth-name {
+    width: 170%;
+  }
+  .eleventh-name {
+    width: 170%;
+  }
+}
 
 .footer-text {
   left: 50%;
