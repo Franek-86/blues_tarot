@@ -806,7 +806,34 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1000px) {
+  .footer-loghi {
+    width: 50rem;
 
+    bottom: -38rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer-loghi {
+    width: 40rem;
+
+    bottom: -38rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .footer-loghi {
+    width: 30rem;
+
+    bottom: -50rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .footer-loghi {
+    width: 20rem;
+
+    bottom: -65rem;
+  }
+}
 .logo-container-1 {
   width: 10rem;
   height: 5rem;
