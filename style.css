@@ -419,22 +419,22 @@ body {
 }
 @media screen and (max-width: 600px) {
   .first-name {
-    width: 160%;
+    width: 155%;
   }
   .third-name {
-    width: 160%;
+    width: 155%;
   }
   .fifth-name {
-    width: 160%;
+    width: 155%;
   }
   .seventh-name {
-    width: 170%;
+    width: 165%;
   }
   .ninth-name {
-    width: 170%;
+    width: 165%;
   }
   .eleventh-name {
-    width: 170%;
+    width: 165%;
   }
 }
 
