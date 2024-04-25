@@ -27,6 +27,18 @@
   margin: 0 auto;
 }
 .title {
+  font-size: 2.8rem;
+  color: #66cdcc;
+  text-shadow: -0.5rem -0.3rem #7642be;
+  position: relative;
+  z-index: 1;
+  font-size: 7rem;
+  color: #66cdcc;
+  text-transform: uppercase;
+  font-family: "Hobo BT", sans-serif;
+  text-shadow: -0.5rem -0.3rem #7642be;
+}
+.title {
   margin-bottom: 0;
   position: relative;
   z-index: 1;
@@ -103,9 +115,7 @@
     width: 85vw;
   }
 }
-.section-title {
-  margin-top: 4rem;
-}
+
 .info {
   /* height: 100vh; */
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
@@ -114,6 +124,14 @@
   margin: 0 auto;
   margin-top: 5rem;
   color: #fff;
+}
+@media screen and (min-width: 1000px) {
+  .info {
+    display: none;
+  }
+}
+p {
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 1000px) {
   .info {
@@ -124,5 +142,130 @@
 @media screen and (max-width: 1000px) {
   p {
     font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.section-title {
+  width: 25%;
+  color: #000;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 20%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.section-title h3 {
+  /* margin: 0 !important; */
+  /* padding: 0 !important; */
+  padding-top: 10px !important;
+}
+.section-title.text-center {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+@media screen and (max-width: 1000px) {
+  .section-title {
+    margin-left: 12%;
+    width: 35%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section-title {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-title {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 356px) {
+  .section-title {
+    width: 75%;
+  }
+}
+
+/* title */
+.text-section-title {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.first-name {
+  width: 110%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.second-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.third-name {
+  width: 110%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.forth-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.fifth-name {
+  width: 110%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.sixth-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.seventh-name {
+  width: 130%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.eight-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.ninth-name {
+  width: 130%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+.tenth-name {
+  width: 100%;
+  height: 10%;
+  background-color: transparent;
+}
+.eleventh-name {
+  width: 130%;
+  height: 10%;
+  background-color: #cf74ad;
+}
+@media screen and (max-width: 600px) {
+  .seventh-name {
+    width: 119%;
+    height: 10%;
+    background-color: #cf74ad;
+  }
+  .ninth-name {
+    width: 119%;
+    height: 10%;
+    background-color: #cf74ad;
+  }
+  .eleventh-name {
+    width: 119%;
+    height: 10%;
+    background-color: #cf74ad;
   }
 }

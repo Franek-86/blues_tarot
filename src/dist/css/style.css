@@ -133,23 +133,4 @@ body {
   position: absolute;
   right: 10px;
   top: 10px;
-}
-
-.title {
-  font-size: 2.8rem;
-  color: #66cdcc;
-  text-shadow: -0.5rem -0.3rem #7642be;
-  position: relative;
-  z-index: 1;
-  font-size: 7rem;
-  color: #66cdcc;
-  text-transform: uppercase;
-  font-family: "Hobo BT", sans-serif;
-  text-shadow: -0.5rem -0.3rem #7642be;
-}
-
-.section-title {
-  background-color: #ee8244;
-  color: #993365;
-  margin: 2rem 0;
 }/*# sourceMappingURL=style.css.map */
