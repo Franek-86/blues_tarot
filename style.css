@@ -121,7 +121,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   img {
-    width: 130px;
+    width: 125px;
   }
 }
 
@@ -246,7 +246,7 @@ body {
   .name-container {
     position: absolute;
     width: 105%;
-    left: calc(130px + 0.875rem);
+    left: calc(125px + 0.875rem);
   }
   .name-container-mobile {
     display: block;
@@ -315,7 +315,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .text-container {
-    left: calc(130px + 0.875rem);
+    left: calc(125px + 0.875rem);
     width: 35vw;
   }
   /* .text-container p {
@@ -419,13 +419,13 @@ body {
 }
 @media screen and (max-width: 600px) {
   .first-name {
-    width: 155%;
+    width: 160%;
   }
   .third-name {
-    width: 155%;
+    width: 160%;
   }
   .fifth-name {
-    width: 155%;
+    width: 160%;
   }
   .seventh-name {
     width: 165%;
