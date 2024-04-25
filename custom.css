@@ -11,7 +11,9 @@
   right: 50%;
   transform: translateX(-50%);
   width: 70vw;
-  height: 100vh;
+  top: 0;
+  bottom: 0;
+  height: 100%;
   background: #993365;
 }
 .main-container {
