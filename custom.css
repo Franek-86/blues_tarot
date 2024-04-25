@@ -198,7 +198,7 @@ p {
   z-index: -1;
 }
 .first-name {
-  width: 110%;
+  width: 100%;
   height: 10%;
   background-color: #cf74ad;
 }
@@ -208,7 +208,7 @@ p {
   background-color: transparent;
 }
 .third-name {
-  width: 110%;
+  width: 100%;
   height: 10%;
   background-color: #cf74ad;
 }
@@ -218,7 +218,7 @@ p {
   background-color: transparent;
 }
 .fifth-name {
-  width: 110%;
+  width: 100%;
   height: 10%;
   background-color: #cf74ad;
 }
