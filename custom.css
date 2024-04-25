@@ -129,6 +129,9 @@
   .info {
     display: none;
   }
+  .section-title-first {
+    margin-top: 5rem !important;
+  }
 }
 p {
   margin-bottom: 1rem;
