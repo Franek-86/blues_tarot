@@ -98,6 +98,11 @@
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 1000px) {
+  .background-container {
+    width: 85vw;
+  }
+}
 .section-title {
   margin-top: 4rem;
 }

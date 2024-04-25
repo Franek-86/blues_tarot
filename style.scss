@@ -28,6 +28,9 @@ body {
   flex-wrap: wrap;
   width: 60vw;
   max-width: 100%;
+  @media all and (max-width: 1000px) {
+    width: 70vw;
+  }
   > a {
     max-width: 150px;
     height: 300px;
