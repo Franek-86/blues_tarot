@@ -119,6 +119,11 @@ body {
     width: 150px;
   }
 }
+@media screen and (max-width: 500px) {
+  img {
+    width: 130px;
+  }
+}
 
 .footer {
   position: absolute;
@@ -241,7 +246,7 @@ body {
   .name-container {
     position: absolute;
     width: 105%;
-    left: calc(150px + 0.875rem);
+    left: calc(130px + 0.875rem);
   }
   .name-container-mobile {
     display: block;
@@ -263,7 +268,7 @@ body {
 @media screen and (max-width: 1000px) {
   .fullName-container {
     height: 120%;
-    width: 11.75rem;
+    width: 13.75rem;
     font-size: 1rem;
     top: -10px;
   }
@@ -273,7 +278,7 @@ body {
 }
 @media screen and (max-width: 500px) {
   .fullName-container {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1000px) and (min-width: 500px) {
@@ -302,7 +307,16 @@ body {
 @media screen and (max-width: 1000px) {
   .text-container {
     left: calc(150px + 0.875rem);
-    width: 30vw;
+    width: 35vw;
+  }
+  /* .text-container p {
+    width: 60vw;
+  } */
+}
+@media screen and (max-width: 500px) {
+  .text-container {
+    left: calc(130px + 0.875rem);
+    width: 35vw;
   }
   /* .text-container p {
     width: 60vw;
@@ -383,23 +397,27 @@ body {
   height: 10%;
   background-color: #cf74ad;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
+  .first-name {
+    width: 150%;
+  }
+  .third-name {
+    width: 150%;
+  }
+  .fifth-name {
+    width: 150%;
+  }
   .seventh-name {
-    width: 119%;
-    height: 10%;
-    background-color: #cf74ad;
+    width: 180%;
   }
   .ninth-name {
-    width: 119%;
-    height: 10%;
-    background-color: #cf74ad;
+    width: 180%;
   }
   .eleventh-name {
-    width: 119%;
-    height: 10%;
-    background-color: #cf74ad;
+    width: 180%;
   }
 }
+
 .footer-text {
   left: 50%;
   right: 50%;
