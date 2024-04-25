@@ -108,6 +108,8 @@
 }
 .info {
   /* height: 100vh; */
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
   width: 60vw;
   margin: 0 auto;
   margin-top: 5rem;
@@ -116,5 +118,11 @@
 @media screen and (max-width: 1000px) {
   .info {
     width: 75vw;
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  p {
+    font-size: 0.875rem;
   }
 }
