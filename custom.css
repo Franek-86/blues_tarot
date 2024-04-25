@@ -190,7 +190,13 @@ p {
 }
 @media screen and (max-width: 356px) {
   .section-title {
-    width: 75%;
+    width: 73%;
+  }
+  .section-title h3 {
+    font-size: 1.675rem;
+    /* margin: 0 !important; */
+    /* padding: 0 !important; */
+    padding-top: 10px !important;
   }
 }
 
