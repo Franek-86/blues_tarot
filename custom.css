@@ -188,7 +188,7 @@ p {
     width: 70%;
   }
 }
-@media screen and (max-width: 356px) {
+@media screen and (max-width: 400px) {
   .section-title {
     width: 73%;
   }
