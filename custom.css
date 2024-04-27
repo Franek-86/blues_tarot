@@ -142,7 +142,9 @@
   width: 80vw;
   margin-top: 3rem;
   background-color: #993365;
+  font-size: 1.25rem;
 }
+
 @media screen and (min-width: 1000px) {
   .info {
     display: none;
@@ -157,7 +159,6 @@ p {
 
 @media screen and (max-width: 1000px) {
   p {
-    font-size: 0.875rem;
     margin-bottom: 1rem;
   }
 }
