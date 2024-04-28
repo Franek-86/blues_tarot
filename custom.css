@@ -11,7 +11,7 @@
 }
 #loading {
   position: absolute;
-  display: grid !important;
+  /* display: grid; */
   place-content: center;
 
   width: 80%;
@@ -27,6 +27,9 @@
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
+  position: relative;
+  left: 50%;
+  top: 50%;
 }
 
 @keyframes rotation {
@@ -197,6 +200,9 @@
   }
   .section-title-first {
     margin-top: 5rem !important;
+  }
+  .select-container {
+    width: 67vw;
   }
 }
 @media screen and (max-width: 700px) {
