@@ -62,10 +62,25 @@
           <a class="info-link" href="./index.html">pagina iniziale</a>
         </div> -->
       </div>
+      <div class="select-container">
+        <p style="color: #111">
+          Questo è un test...Qui potrebbe andare un testo che spiega il motivo
+          della divisione della mostra in categorie di carte e poi si invita a
+          scegliere la galleria da visitare, non so bene come introdurre il
+          fatto che la prima galleria visibile è quella degli arcani maggiori
+          (si puo anche cambiare nel caso)
+        </p>
+        <select name="" id="gallery-select">
+          <option value="arcani-maggiori">Arcani maggiori</option>
+          <option value="bastoni">bastoni</option>
+          <option value="spade">spade</option>
+          <option value="denari">denari</option>
+        </select>
+      </div>
     </section>
     <div id="loading" style="display: block"><span class="spinner"></span></div>
     <div id="test-full" style="display: none">
-      <section id="arcani-maggiori" class="arcani-maggiori">
+      <section id="arcani-maggiori" class="carta arcani-maggiori">
         <div class="section-title text-center">
           <div class="text-section-title">
             <div class="first-name"></div>
@@ -512,7 +527,7 @@
           </div>
         </article>
       </section>
-      <section id="spade" class="spade">
+      <section id="spade" class="carta spade">
         <div class="section-title text-center">
           <div class="text-section-title">
             <div class="first-name"></div>
@@ -735,7 +750,7 @@
           </div>
         </article>
       </section>
-      <section id="bastoni" class="bastoni">
+      <section id="bastoni" class="carta bastoni">
         <div class="section-title text-center">
           <div class="text-section-title">
             <div class="first-name"></div>
@@ -1003,7 +1018,7 @@
           </div>
         </article>
       </section>
-      <section id="coppe" class="coppe">
+      <section id="coppe" class="carta coppe">
         <div class="section-title text-center">
           <div class="text-section-title">
             <div class="first-name"></div>
@@ -1256,7 +1271,7 @@
           </div>
         </article>
       </section>
-      <section id="denari" class="denari">
+      <section id="denari" class="carta denari">
         <div class="section-title text-center">
           <div class="text-section-title">
             <div class="first-name"></div>
@@ -1522,14 +1537,26 @@
     $("#loading").hide();
     $("#test-full").show();
   });
-  // $(document).ready(function () {
-  //   console.log("ok");
-  //   $("#loading").show();
-  //   $("#test-full").hide();
-  // });
-  // $(window).load(function () {
-  //   console.log("now ok");
-  //   $("#loading").hide();
-  //   $("#test-full").show();
-  // });
+
+  $(document).ready(function () {
+    $(".carta").each(function (index) {
+      if ($(this).hasClass("arcani-maggiori")) {
+        $(this).show();
+      } else {
+        $(this).hide();
+      }
+    });
+    $("#gallery-select").on("change", function () {
+      let check = $("#gallery-select option:selected").val();
+      $(".carta").each(function (index) {
+        if ($(this).hasClass(check)) {
+          $(this).show();
+        } else {
+          $(this).hide();
+        }
+      });
+    });
+    // let test = $("#gallery-select option:selected").val();
+    // console.log(test);
+  });
 </script>
