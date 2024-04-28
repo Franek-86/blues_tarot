@@ -288,10 +288,6 @@ body {
   .text-container {
     width: 60vw !important;
   }
-  .main {
-    /* border: 5px solid red;
-    width: 90vw !important; */
-  }
 }
 .text-container {
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",

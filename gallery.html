@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./src/dist/css/style.css" />
-    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="./custom.css" />
 
     <link
       rel="stylesheet"
@@ -14,6 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <title>Document</title>
   </head>
   <body>
@@ -21,7 +26,8 @@
       <div class="test-nav">qui</div>
     </article> -->
     <div class="background-container"></div>
-    <section class="arcani-maggiori">
+
+    <section class="header">
       <div class="main-container">
         <div class="second"></div>
         <div class="third">
@@ -56,1126 +62,1174 @@
           <a class="info-link" href="./index.html">pagina iniziale</a>
         </div> -->
       </div>
-      <div class="section-title section-title-first text-center">
-        <div class="text-section-title">
-          <div class="first-name"></div>
-          <div class="second-name"></div>
-          <div class="third-name"></div>
-          <div class="forth-name"></div>
-          <div class="fifth-name"></div>
-          <div class="sixth-name"></div>
-          <div class="seventh-name"></div>
-          <div class="eight-name"></div>
-          <div class="ninth-name"></div>
-          <div class="tenth-name"></div>
-          <div class="eleventh-name"></div>
-        </div>
-        <h3>arcani maggiori</h3>
-      </div>
-
-      <article class="gallery-container">
-        <div class="thumbs">
-          <a href="#target2"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-01.jpg"
-              alt=""
-          /></a>
-          <a href="#target3"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-02.jpg"
-              alt=""
-          /></a>
-          <a href="#target4"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-03.jpg"
-              alt=""
-          /></a>
-          <a href="#target5"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-04.jpg"
-              alt=""
-          /></a>
-          <a href="#target6"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-05.jpg"
-              alt=""
-          /></a>
-          <a href="#target7"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-06.jpg"
-              alt=""
-          /></a>
-          <a href="#target8"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-07.jpg"
-              alt=""
-          /></a>
-          <a href="#target9"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-08.jpg"
-              alt=""
-          /></a>
-          <a href="#target10"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-09.jpg"
-              alt=""
-          /></a>
-          <a href="#target11"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-10.jpg"
-              alt=""
-          /></a>
-          <a href="#target12"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-11.jpg"
-              alt=""
-          /></a>
-          <a href="#target13"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-12.jpg"
-              alt=""
-          /></a>
-          <a href="#target14"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-13.jpg"
-              alt=""
-          /></a>
-          <a href="#target15"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-14.jpg"
-              alt=""
-          /></a>
-          <a href="#target16"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-15.jpg"
-              alt=""
-          /></a>
-          <a href="#target17"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-16.jpg"
-              alt=""
-          /></a>
-          <a href="#target18"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-17.jpg"
-              alt=""
-          /></a>
-          <a href="#target19"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-18.jpg"
-              alt=""
-          /></a>
-          <a href="#target20"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-19.jpg"
-              alt=""
-          /></a>
-          <a href="#target21"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-20.jpg"
-              alt=""
-          /></a>
-          <a href="#target22"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-21.jpg"
-              alt=""
-          /></a>
-          <a href="#target23"
-            ><img
-              src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-22.jpg"
-              alt=""
-              alt=""
-          /></a>
+    </section>
+    <div id="loading" style="display: block"><span class="spinner"></span></div>
+    <div id="test-full" style="display: none">
+      <section id="arcani-maggiori" class="arcani-maggiori">
+        <div class="section-title text-center">
+          <div class="text-section-title">
+            <div class="first-name"></div>
+            <div class="second-name"></div>
+            <div class="third-name"></div>
+            <div class="forth-name"></div>
+            <div class="fifth-name"></div>
+            <div class="sixth-name"></div>
+            <div class="seventh-name"></div>
+            <div class="eight-name"></div>
+            <div class="ninth-name"></div>
+            <div class="tenth-name"></div>
+            <div class="eleventh-name"></div>
+          </div>
+          <h3>arcani maggiori</h3>
         </div>
 
-        <div class="lightbox">
-          <div class="target" id="target2">
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
-            <div class="content">
-              <img
+        <article class="gallery-container">
+          <div class="thumbs">
+            <a href="#target2"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-01.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target3" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target3">
-            <a href="#target2" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target3"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-02.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target4" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target4">
-            <a href="#target3" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target4"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-03.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target5" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target5">
-            <a href="#target4" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target5"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-04.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target6" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target6">
-            <a href="#target5" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target6"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-05.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target7" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target7">
-            <a href="#target6" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target7"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-06.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target8" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target8">
-            <a href="#target7" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target8"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-07.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target9" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target9">
-            <a href="#target8" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target9"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-08.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target10" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target10">
-            <a href="#target9" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target10"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-09.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target11" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target11">
-            <a href="#target10" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target11"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-10.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target12" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target12">
-            <a href="#target11" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target12"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-11.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target13" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target13">
-            <a href="#target12" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target13"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-12.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target14" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target14">
-            <a href="#target13" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target14"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-13.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target15" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target15">
-            <a href="#target14" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target15"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-14.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target16" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target16">
-            <a href="#target15" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target16"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-15.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target17" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target17">
-            <a href="#target16" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target17"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-16.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target18" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target18">
-            <a href="#target17" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target18"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-17.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target19" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target19">
-            <a href="#target18" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target19"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-18.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target20" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target20">
-            <a href="#target19" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target20"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-19.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target21" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target21">
-            <a href="#target20" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target21"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-20.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target22" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target22">
-            <a href="#target21" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
+            /></a>
+            <a href="#target22"
+              ><img
                 src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-21.jpg"
                 alt=""
-              />
-            </div>
-            <a href="#target23" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target23">
-            <a href="#target22" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img
-                src="/images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-22.jpg"
+            /></a>
+            <a href="#target23"
+              ><img
+                src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-22.jpg"
                 alt=""
-              />
-            </div>
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
+                alt=""
+            /></a>
           </div>
 
-          <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
-        </div>
-      </article>
-    </section>
-    <section class="spade">
-      <div class="section-title text-center">
-        <div class="text-section-title">
-          <div class="first-name"></div>
-          <div class="second-name"></div>
-          <div class="third-name"></div>
-          <div class="forth-name"></div>
-          <div class="fifth-name"></div>
-          <div class="sixth-name"></div>
-          <div class="seventh-name"></div>
-          <div class="eight-name"></div>
-          <div class="ninth-name"></div>
-          <div class="tenth-name"></div>
-          <div class="eleventh-name"></div>
-        </div>
-        <h3>spade/swords</h3>
-      </div>
-      <article class="gallery-container">
-        <div class="thumbs">
-          <a href="#target37"
-            ><img src="./images/spade/arcani minori-spade-01.jpg" alt="" alt=""
-          /></a>
-          <a href="#target38"
-            ><img src="./images/spade/arcani minori-spade-02.jpg" alt=""
-          /></a>
-          <a href="#target39"
-            ><img src="./images/spade/arcani minori-spade-03.jpg" alt=""
-          /></a>
-          <a href="#target40"
-            ><img src="./images/spade/arcani minori-spade-04.jpg" alt=""
-          /></a>
-          <a href="#target41"
-            ><img src="./images/spade/arcani minori-spade-05.jpg" alt=""
-          /></a>
-          <a href="#target42"
-            ><img src="./images/spade/arcani minori-spade-06.jpg" alt=""
-          /></a>
-          <a href="#target43"
-            ><img src="./images/spade/arcani minori-spade-07.jpg" alt=""
-          /></a>
-          <a href="#target44"
-            ><img src="./images/spade/arcani minori-spade-08.jpg" alt=""
-          /></a>
-          <a href="#target45"
-            ><img src="./images/spade/arcani minori-spade-09.jpg" alt=""
-          /></a>
-          <a href="#target46"
-            ><img src="./images/spade/arcani minori-spade-10.jpg" alt=""
-          /></a>
-          <a href="#target47"
-            ><img src="./images/spade/arcani minori-spade-11.jpg" alt=""
-          /></a>
-          <a href="#target48"
-            ><img src="./images/spade/arcani minori-spade-12.jpg" alt=""
-          /></a>
-          <a href="#target49"
-            ><img src="./images/spade/arcani minori-spade-13.jpg" alt=""
-          /></a>
-          <a href="#target50"
-            ><img src="./images/spade/arcani minori-spade-14.jpg" alt=""
-          /></a>
-        </div>
-        <div class="lightbox">
-          <div class="target" id="target37">
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-01.jpg" alt="" />
+          <div class="lightbox">
+            <div class="target" id="target2">
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-01.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target3" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target38" title="next" class="fas nav"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target38">
-            <a href="#target37" title="previous" class="fas nav"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-02.jpg" alt="" />
+            <div class="target" id="target3">
+              <a href="#target2" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-02.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target4" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target39" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target39">
-            <a href="#target38" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-03.jpg" alt="" />
+            <div class="target" id="target4">
+              <a href="#target3" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-03.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target5" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target40" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target40">
-            <a href="#targe39" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-04.jpg" alt="" />
+            <div class="target" id="target5">
+              <a href="#target4" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-04.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target6" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target41" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target41">
-            <a href="#targe40" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-05.jpg" alt="" />
+            <div class="target" id="target6">
+              <a href="#target5" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-05.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target7" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target42" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target42">
-            <a href="#target41" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-06.jpg" alt="" />
+            <div class="target" id="target7">
+              <a href="#target6" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-06.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target8" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target43" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target43">
-            <a href="#target42" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-07.jpg" alt="" />
+            <div class="target" id="target8">
+              <a href="#target7" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-07.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target9" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target44" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target44">
-            <a href="#target43" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-08.jpg" alt="" />
+            <div class="target" id="target9">
+              <a href="#target8" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-08.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target10" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target45" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target45">
-            <a href="#target44" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-09.jpg" alt="" />
+            <div class="target" id="target10">
+              <a href="#target9" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-09.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target11" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target46" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target46">
-            <a href="#target45" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-10.jpg" alt="" />
+            <div class="target" id="target11">
+              <a href="#target10" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-10.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target12" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target47" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target47">
-            <a href="#target46" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-11.jpg" alt="" />
+            <div class="target" id="target12">
+              <a href="#target11" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-11.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target13" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target48" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target48">
-            <a href="#target47" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-12.jpg" alt="" />
+            <div class="target" id="target13">
+              <a href="#target12" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-12.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target14" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target49" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target49">
-            <a href="#target48" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-13.jpg" alt="" />
+            <div class="target" id="target14">
+              <a href="#target13" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-13.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target15" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target50" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target50">
-            <a href="#target49" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/spade/arcani minori-spade-14.jpg" alt="" />
+            <div class="target" id="target15">
+              <a href="#target14" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-14.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target16" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <span class="fas"></span>
-          </div>
+            <div class="target" id="target16">
+              <a href="#target15" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-15.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target17" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target17">
+              <a href="#target16" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-16.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target18" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target18">
+              <a href="#target17" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-17.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target19" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target19">
+              <a href="#target18" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-18.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target20" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target20">
+              <a href="#target19" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-19.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target21" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target21">
+              <a href="#target20" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-20.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target22" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target22">
+              <a href="#target21" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-21.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target23" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target23">
+              <a href="#target22" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="/images/arcani_maggiori/blues tarot-arcani maggiori-WEBSITE-22.jpg"
+                  alt=""
+                />
+              </div>
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+            </div>
 
-          <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+            <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </article>
+      </section>
+      <section id="spade" class="spade">
+        <div class="section-title text-center">
+          <div class="text-section-title">
+            <div class="first-name"></div>
+            <div class="second-name"></div>
+            <div class="third-name"></div>
+            <div class="forth-name"></div>
+            <div class="fifth-name"></div>
+            <div class="sixth-name"></div>
+            <div class="seventh-name"></div>
+            <div class="eight-name"></div>
+            <div class="ninth-name"></div>
+            <div class="tenth-name"></div>
+            <div class="eleventh-name"></div>
+          </div>
+          <h3>spade/swords</h3>
         </div>
-      </article>
-    </section>
-    <section class="bastoni">
-      <div class="section-title text-center">
-        <div class="text-section-title">
-          <div class="first-name"></div>
-          <div class="second-name"></div>
-          <div class="third-name"></div>
-          <div class="forth-name"></div>
-          <div class="fifth-name"></div>
-          <div class="sixth-name"></div>
-          <div class="seventh-name"></div>
-          <div class="eight-name"></div>
-          <div class="ninth-name"></div>
-          <div class="tenth-name"></div>
-          <div class="eleventh-name"></div>
+        <article class="gallery-container">
+          <div class="thumbs">
+            <a href="#target37"
+              ><img
+                src="./images/spade/arcani minori-spade-01.jpg"
+                alt=""
+                alt=""
+            /></a>
+            <a href="#target38"
+              ><img src="./images/spade/arcani minori-spade-02.jpg" alt=""
+            /></a>
+            <a href="#target39"
+              ><img src="./images/spade/arcani minori-spade-03.jpg" alt=""
+            /></a>
+            <a href="#target40"
+              ><img src="./images/spade/arcani minori-spade-04.jpg" alt=""
+            /></a>
+            <a href="#target41"
+              ><img src="./images/spade/arcani minori-spade-05.jpg" alt=""
+            /></a>
+            <a href="#target42"
+              ><img src="./images/spade/arcani minori-spade-06.jpg" alt=""
+            /></a>
+            <a href="#target43"
+              ><img src="./images/spade/arcani minori-spade-07.jpg" alt=""
+            /></a>
+            <a href="#target44"
+              ><img src="./images/spade/arcani minori-spade-08.jpg" alt=""
+            /></a>
+            <a href="#target45"
+              ><img src="./images/spade/arcani minori-spade-09.jpg" alt=""
+            /></a>
+            <a href="#target46"
+              ><img src="./images/spade/arcani minori-spade-10.jpg" alt=""
+            /></a>
+            <a href="#target47"
+              ><img src="./images/spade/arcani minori-spade-11.jpg" alt=""
+            /></a>
+            <a href="#target48"
+              ><img src="./images/spade/arcani minori-spade-12.jpg" alt=""
+            /></a>
+            <a href="#target49"
+              ><img src="./images/spade/arcani minori-spade-13.jpg" alt=""
+            /></a>
+            <a href="#target50"
+              ><img src="./images/spade/arcani minori-spade-14.jpg" alt=""
+            /></a>
+          </div>
+          <div class="lightbox">
+            <div class="target" id="target37">
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-01.jpg" alt="" />
+              </div>
+              <a href="#target38" title="next" class="fas nav"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target38">
+              <a href="#target37" title="previous" class="fas nav"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-02.jpg" alt="" />
+              </div>
+              <a href="#target39" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target39">
+              <a href="#target38" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-03.jpg" alt="" />
+              </div>
+              <a href="#target40" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target40">
+              <a href="#targe39" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-04.jpg" alt="" />
+              </div>
+              <a href="#target41" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target41">
+              <a href="#targe40" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-05.jpg" alt="" />
+              </div>
+              <a href="#target42" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target42">
+              <a href="#target41" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-06.jpg" alt="" />
+              </div>
+              <a href="#target43" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target43">
+              <a href="#target42" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-07.jpg" alt="" />
+              </div>
+              <a href="#target44" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target44">
+              <a href="#target43" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-08.jpg" alt="" />
+              </div>
+              <a href="#target45" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target45">
+              <a href="#target44" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-09.jpg" alt="" />
+              </div>
+              <a href="#target46" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target46">
+              <a href="#target45" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-10.jpg" alt="" />
+              </div>
+              <a href="#target47" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target47">
+              <a href="#target46" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-11.jpg" alt="" />
+              </div>
+              <a href="#target48" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target48">
+              <a href="#target47" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-12.jpg" alt="" />
+              </div>
+              <a href="#target49" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target49">
+              <a href="#target48" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-13.jpg" alt="" />
+              </div>
+              <a href="#target50" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
+            </div>
+            <div class="target" id="target50">
+              <a href="#target49" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/spade/arcani minori-spade-14.jpg" alt="" />
+              </div>
+              <span class="fas"></span>
+            </div>
+
+            <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </article>
+      </section>
+      <section id="bastoni" class="bastoni">
+        <div class="section-title text-center">
+          <div class="text-section-title">
+            <div class="first-name"></div>
+            <div class="second-name"></div>
+            <div class="third-name"></div>
+            <div class="forth-name"></div>
+            <div class="fifth-name"></div>
+            <div class="sixth-name"></div>
+            <div class="seventh-name"></div>
+            <div class="eight-name"></div>
+            <div class="ninth-name"></div>
+            <div class="tenth-name"></div>
+            <div class="eleventh-name"></div>
+          </div>
+          <h3>bastoni/wands</h3>
         </div>
-        <h3>bastoni/wands</h3>
-      </div>
-      <article class="gallery-container">
-        <div class="thumbs">
-          <a href="#target23"
-            ><img
-              src="./images/bastoni/arcani minori-bastoni-01.jpg"
-              alt=""
-              alt=""
-          /></a>
-          <a href="#target24"
-            ><img src="./images/bastoni/arcani minori-bastoni-02.jpg" alt=""
-          /></a>
-          <a href="#target25"
-            ><img src="./images/bastoni/arcani minori-bastoni-03.jpg" alt=""
-          /></a>
-          <a href="#target26"
-            ><img src="./images/bastoni/arcani minori-bastoni-04.jpg" alt=""
-          /></a>
-          <a href="#target27"
-            ><img src="./images/bastoni/arcani minori-bastoni-05.jpg" alt=""
-          /></a>
-          <a href="#target28"
-            ><img src="./images/bastoni/arcani minori-bastoni-06.jpg" alt=""
-          /></a>
-          <a href="#target29"
-            ><img src="./images/bastoni/arcani minori-bastoni-07.jpg" alt=""
-          /></a>
-          <a href="#target30"
-            ><img src="./images/bastoni/arcani minori-bastoni-08.jpg" alt=""
-          /></a>
-          <a href="#target31"
-            ><img src="./images/bastoni/arcani minori-bastoni-09.jpg" alt=""
-          /></a>
-          <a href="#target32"
-            ><img src="./images/bastoni/arcani minori-bastoni-10.jpg" alt=""
-          /></a>
-          <a href="#target32"
-            ><img src="./images/bastoni/arcani minori-bastoni-11.jpg" alt=""
-          /></a>
-          <a href="#target33"
-            ><img src="./images/bastoni/arcani minori-bastoni-12.jpg" alt=""
-          /></a>
-          <a href="#target34"
-            ><img src="./images/bastoni/arcani minori-bastoni-13.jpg" alt=""
-          /></a>
-          <a href="#target35"
-            ><img src="./images/bastoni/arcani minori-bastoni-14.jpg" alt=""
-          /></a>
-          <!-- <a href="#target36"
+        <article class="gallery-container">
+          <div class="thumbs">
+            <a href="#target23"
+              ><img
+                src="./images/bastoni/arcani minori-bastoni-01.jpg"
+                alt=""
+                alt=""
+            /></a>
+            <a href="#target24"
+              ><img src="./images/bastoni/arcani minori-bastoni-02.jpg" alt=""
+            /></a>
+            <a href="#target25"
+              ><img src="./images/bastoni/arcani minori-bastoni-03.jpg" alt=""
+            /></a>
+            <a href="#target26"
+              ><img src="./images/bastoni/arcani minori-bastoni-04.jpg" alt=""
+            /></a>
+            <a href="#target27"
+              ><img src="./images/bastoni/arcani minori-bastoni-05.jpg" alt=""
+            /></a>
+            <a href="#target28"
+              ><img src="./images/bastoni/arcani minori-bastoni-06.jpg" alt=""
+            /></a>
+            <a href="#target29"
+              ><img src="./images/bastoni/arcani minori-bastoni-07.jpg" alt=""
+            /></a>
+            <a href="#target30"
+              ><img src="./images/bastoni/arcani minori-bastoni-08.jpg" alt=""
+            /></a>
+            <a href="#target31"
+              ><img src="./images/bastoni/arcani minori-bastoni-09.jpg" alt=""
+            /></a>
+            <a href="#target32"
+              ><img src="./images/bastoni/arcani minori-bastoni-10.jpg" alt=""
+            /></a>
+            <a href="#target32"
+              ><img src="./images/bastoni/arcani minori-bastoni-11.jpg" alt=""
+            /></a>
+            <a href="#target33"
+              ><img src="./images/bastoni/arcani minori-bastoni-12.jpg" alt=""
+            /></a>
+            <a href="#target34"
+              ><img src="./images/bastoni/arcani minori-bastoni-13.jpg" alt=""
+            /></a>
+            <a href="#target35"
+              ><img src="./images/bastoni/arcani minori-bastoni-14.jpg" alt=""
+            /></a>
+            <!-- <a href="#target36"
             ><img src="./images/bastoni/arcani minori-bastoni-15.png" alt=""
           /></a> -->
-        </div>
-        <div class="lightbox">
-          <div class="target" id="target23">
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-01.jpg" alt="" />
-            </div>
-            <a href="#target24" title="next" class="fas nav"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
           </div>
-          <div class="target" id="target24">
-            <a href="#target23" title="previous" class="fas nav"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-02.jpg" alt="" />
+          <div class="lightbox">
+            <div class="target" id="target23">
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-01.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target24" title="next" class="fas nav"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target25" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target25">
-            <a href="#target24" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-03.jpg" alt="" />
+            <div class="target" id="target24">
+              <a href="#target23" title="previous" class="fas nav"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-02.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target25" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target26" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target26">
-            <a href="#targe25" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-04.jpg" alt="" />
+            <div class="target" id="target25">
+              <a href="#target24" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-03.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target26" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target27" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target27">
-            <a href="#target26" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-05.jpg" alt="" />
+            <div class="target" id="target26">
+              <a href="#targe25" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-04.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target27" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target28" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target28">
-            <a href="#target27" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-06.jpg" alt="" />
+            <div class="target" id="target27">
+              <a href="#target26" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-05.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target28" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target29" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target29">
-            <a href="#target28" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-07.jpg" alt="" />
+            <div class="target" id="target28">
+              <a href="#target27" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-06.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target29" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target30" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target30">
-            <a href="#target29" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-08.jpg" alt="" />
+            <div class="target" id="target29">
+              <a href="#target28" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-07.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target30" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target31" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target31">
-            <a href="#target30" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-09.jpg" alt="" />
+            <div class="target" id="target30">
+              <a href="#target29" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-08.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target31" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target32" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target32">
-            <a href="#target31" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-10.jpg" alt="" />
+            <div class="target" id="target31">
+              <a href="#target30" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-09.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target32" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target33" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target33">
-            <a href="#target32" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-11.jpg" alt="" />
+            <div class="target" id="target32">
+              <a href="#target31" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-10.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target33" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target34" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target34">
-            <a href="#target33" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-12.jpg" alt="" />
+            <div class="target" id="target33">
+              <a href="#target32" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-11.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target34" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target35" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target35">
-            <a href="#target34" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-13.jpg" alt="" />
+            <div class="target" id="target34">
+              <a href="#target33" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-12.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target35" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target36" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target36">
-            <a href="#target35" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/bastoni/arcani minori-bastoni-14.jpg" alt="" />
+            <div class="target" id="target35">
+              <a href="#target34" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-13.jpg"
+                  alt=""
+                />
+              </div>
+              <a href="#target36" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <span class="fas"></span>
-          </div>
+            <div class="target" id="target36">
+              <a href="#target35" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img
+                  src="./images/bastoni/arcani minori-bastoni-14.jpg"
+                  alt=""
+                />
+              </div>
+              <span class="fas"></span>
+            </div>
 
-          <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+            <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </article>
+      </section>
+      <section id="coppe" class="coppe">
+        <div class="section-title text-center">
+          <div class="text-section-title">
+            <div class="first-name"></div>
+            <div class="second-name"></div>
+            <div class="third-name"></div>
+            <div class="forth-name"></div>
+            <div class="fifth-name"></div>
+            <div class="sixth-name"></div>
+            <div class="seventh-name"></div>
+            <div class="eight-name"></div>
+            <div class="ninth-name"></div>
+            <div class="tenth-name"></div>
+            <div class="eleventh-name"></div>
+          </div>
+          <h3>coppe/cups</h3>
         </div>
-      </article>
-    </section>
-
-    <section class="coppe">
-      <div class="section-title text-center">
-        <div class="text-section-title">
-          <div class="first-name"></div>
-          <div class="second-name"></div>
-          <div class="third-name"></div>
-          <div class="forth-name"></div>
-          <div class="fifth-name"></div>
-          <div class="sixth-name"></div>
-          <div class="seventh-name"></div>
-          <div class="eight-name"></div>
-          <div class="ninth-name"></div>
-          <div class="tenth-name"></div>
-          <div class="eleventh-name"></div>
-        </div>
-        <h3>coppe/cups</h3>
-      </div>
-      <article class="gallery-container">
-        <div class="thumbs">
-          <!-- <a href="#target37"
+        <article class="gallery-container">
+          <div class="thumbs">
+            <!-- <a href="#target37"
             ><img
               src="./images/blues tarots-01-le bateleur-01.png"
               alt=""
               alt=""
           /></a> -->
-          <a href="#target51"
-            ><img src="./images/coppe/arcani minori-coppe-01.jpg" alt=""
-          /></a>
-          <a href="#target52"
-            ><img src="./images/coppe/arcani minori-coppe-02.jpg" alt=""
-          /></a>
-          <a href="#target53"
-            ><img src="./images/coppe/arcani minori-coppe-03.jpg" alt=""
-          /></a>
-          <a href="#target54"
-            ><img src="./images/coppe/arcani minori-coppe-04.jpg" alt=""
-          /></a>
-          <a href="#target55"
-            ><img src="./images/coppe/arcani minori-coppe-05.jpg" alt=""
-          /></a>
-          <a href="#target56"
-            ><img src="./images/coppe/arcani minori-coppe-06.jpg" alt=""
-          /></a>
-          <a href="#target57"
-            ><img src="./images/coppe/arcani minori-coppe-07.jpg" alt=""
-          /></a>
-          <a href="#target58"
-            ><img src="./images/coppe/arcani minori-coppe-08.jpg" alt=""
-          /></a>
-          <a href="#target59"
-            ><img src="./images/coppe/arcani minori-coppe-09.jpg" alt=""
-          /></a>
-          <a href="#target60"
-            ><img src="./images/coppe/arcani minori-coppe-10.jpg" alt=""
-          /></a>
-          <a href="#target61"
-            ><img src="./images/coppe/arcani minori-coppe-11.jpg" alt=""
-          /></a>
-          <a href="#target62"
-            ><img src="./images/coppe/arcani minori-coppe-12.jpg" alt=""
-          /></a>
-          <a href="#target63"
-            ><img src="./images/coppe/arcani minori-coppe-13.jpg" alt=""
-          /></a>
-          <a href="#target64"
-            ><img src="./images/coppe/arcani minori-coppe-14.jpg" alt=""
-          /></a>
-          <!-- <a href="#target65"
+            <a href="#target51"
+              ><img src="./images/coppe/arcani minori-coppe-01.jpg" alt=""
+            /></a>
+            <a href="#target52"
+              ><img src="./images/coppe/arcani minori-coppe-02.jpg" alt=""
+            /></a>
+            <a href="#target53"
+              ><img src="./images/coppe/arcani minori-coppe-03.jpg" alt=""
+            /></a>
+            <a href="#target54"
+              ><img src="./images/coppe/arcani minori-coppe-04.jpg" alt=""
+            /></a>
+            <a href="#target55"
+              ><img src="./images/coppe/arcani minori-coppe-05.jpg" alt=""
+            /></a>
+            <a href="#target56"
+              ><img src="./images/coppe/arcani minori-coppe-06.jpg" alt=""
+            /></a>
+            <a href="#target57"
+              ><img src="./images/coppe/arcani minori-coppe-07.jpg" alt=""
+            /></a>
+            <a href="#target58"
+              ><img src="./images/coppe/arcani minori-coppe-08.jpg" alt=""
+            /></a>
+            <a href="#target59"
+              ><img src="./images/coppe/arcani minori-coppe-09.jpg" alt=""
+            /></a>
+            <a href="#target60"
+              ><img src="./images/coppe/arcani minori-coppe-10.jpg" alt=""
+            /></a>
+            <a href="#target61"
+              ><img src="./images/coppe/arcani minori-coppe-11.jpg" alt=""
+            /></a>
+            <a href="#target62"
+              ><img src="./images/coppe/arcani minori-coppe-12.jpg" alt=""
+            /></a>
+            <a href="#target63"
+              ><img src="./images/coppe/arcani minori-coppe-13.jpg" alt=""
+            /></a>
+            <a href="#target64"
+              ><img src="./images/coppe/arcani minori-coppe-14.jpg" alt=""
+            /></a>
+            <!-- <a href="#target65"
             ><img src="./images/blues tarots-01-le bateleur-15.png" alt=""
           /></a> -->
-        </div>
-        <div class="lightbox">
-          <div class="target" id="target51">
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-01.jpg" alt="" />
-            </div>
-            <a href="#target52" title="next" class="fas nav"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
           </div>
-          <div class="target" id="target52">
-            <a href="#target51" title="previous" class="fas nav"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-02.jpg" alt="" />
+          <div class="lightbox">
+            <div class="target" id="target51">
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-01.jpg" alt="" />
+              </div>
+              <a href="#target52" title="next" class="fas nav"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target53" title="next" class="fas nav"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target53">
-            <a href="#target52" title="previous" class="fas nav"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-03.jpg" alt="" />
+            <div class="target" id="target52">
+              <a href="#target51" title="previous" class="fas nav"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-02.jpg" alt="" />
+              </div>
+              <a href="#target53" title="next" class="fas nav"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target54" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target54">
-            <a href="#targe53" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-04.jpg" alt="" />
+            <div class="target" id="target53">
+              <a href="#target52" title="previous" class="fas nav"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-03.jpg" alt="" />
+              </div>
+              <a href="#target54" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target55" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target55">
-            <a href="#targe54" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-05.jpg" alt="" />
+            <div class="target" id="target54">
+              <a href="#targe53" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-04.jpg" alt="" />
+              </div>
+              <a href="#target55" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target56" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target56">
-            <a href="#target55" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-06.jpg" alt="" />
+            <div class="target" id="target55">
+              <a href="#targe54" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-05.jpg" alt="" />
+              </div>
+              <a href="#target56" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target57" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target57">
-            <a href="#target56" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-07.jpg" alt="" />
+            <div class="target" id="target56">
+              <a href="#target55" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-06.jpg" alt="" />
+              </div>
+              <a href="#target57" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target58" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target58">
-            <a href="#target57" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-08.jpg" alt="" />
+            <div class="target" id="target57">
+              <a href="#target56" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-07.jpg" alt="" />
+              </div>
+              <a href="#target58" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target59" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target59">
-            <a href="#target58" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-09.jpg" alt="" />
+            <div class="target" id="target58">
+              <a href="#target57" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-08.jpg" alt="" />
+              </div>
+              <a href="#target59" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target60" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target60">
-            <a href="#target59" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-10.jpg" alt="" />
+            <div class="target" id="target59">
+              <a href="#target58" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-09.jpg" alt="" />
+              </div>
+              <a href="#target60" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target61" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target61">
-            <a href="#target60" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-11.jpg" alt="" />
+            <div class="target" id="target60">
+              <a href="#target59" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-10.jpg" alt="" />
+              </div>
+              <a href="#target61" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target62" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target62">
-            <a href="#target61" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-12.jpg" alt="" />
+            <div class="target" id="target61">
+              <a href="#target60" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-11.jpg" alt="" />
+              </div>
+              <a href="#target62" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target63" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target63">
-            <a href="#target62" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-13.jpg" alt="" />
+            <div class="target" id="target62">
+              <a href="#target61" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-12.jpg" alt="" />
+              </div>
+              <a href="#target63" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target64" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target64">
-            <a href="#target63" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/coppe/arcani minori-coppe-14.jpg" alt="" />
+            <div class="target" id="target63">
+              <a href="#target62" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-13.jpg" alt="" />
+              </div>
+              <a href="#target64" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
-          </div>
-          <!-- <div class="target" id="target65">
+            <div class="target" id="target64">
+              <a href="#target63" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/coppe/arcani minori-coppe-14.jpg" alt="" />
+              </div>
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+            </div>
+            <!-- <div class="target" id="target65">
             <a href="#target64" class="fas nav" title="previous"
               ><i class="fa-solid fa-chevron-left"></i
             ></a>
@@ -1186,7 +1240,7 @@
               ><i class="fa-solid fa-chevron-right"></i
             ></a>
           </div> -->
-          <!-- <div class="target" id="target66">
+            <!-- <div class="target" id="target66">
             <a href="#target64" class="fas nav" title="previous"
               ><i class="fa-solid fa-chevron-left"></i
             ></a>
@@ -1198,237 +1252,237 @@
             </span>
           </div> -->
 
-          <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+            <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </article>
+      </section>
+      <section id="denari" class="denari">
+        <div class="section-title text-center">
+          <div class="text-section-title">
+            <div class="first-name"></div>
+            <div class="second-name"></div>
+            <div class="third-name"></div>
+            <div class="forth-name"></div>
+            <div class="fifth-name"></div>
+            <div class="sixth-name"></div>
+            <div class="seventh-name"></div>
+            <div class="eight-name"></div>
+            <div class="ninth-name"></div>
+            <div class="tenth-name"></div>
+            <div class="eleventh-name"></div>
+          </div>
+          <h3>denari/coins</h3>
         </div>
-      </article>
-    </section>
-    <section class="denari">
-      <div class="section-title text-center">
-        <div class="text-section-title">
-          <div class="first-name"></div>
-          <div class="second-name"></div>
-          <div class="third-name"></div>
-          <div class="forth-name"></div>
-          <div class="fifth-name"></div>
-          <div class="sixth-name"></div>
-          <div class="seventh-name"></div>
-          <div class="eight-name"></div>
-          <div class="ninth-name"></div>
-          <div class="tenth-name"></div>
-          <div class="eleventh-name"></div>
-        </div>
-        <h3>denari/coins</h3>
-      </div>
-      <article class="gallery-container">
-        <div class="thumbs">
-          <!-- <a href="#target37"
+        <article class="gallery-container">
+          <div class="thumbs">
+            <!-- <a href="#target37"
             ><img
               src="./images/blues tarots-01-le bateleur-01.png"
               alt=""
               alt=""
           /></a> -->
-          <a href="#target67"
-            ><img src="./images/denari/arcani minori-denari-01.jpg" alt=""
-          /></a>
-          <a href="#target68"
-            ><img src="./images/denari/arcani minori-denari-02.jpg" alt=""
-          /></a>
-          <a href="#target69"
-            ><img src="./images/denari/arcani minori-denari-03.jpg" alt=""
-          /></a>
-          <a href="#target70"
-            ><img src="./images/denari/arcani minori-denari-04.jpg" alt=""
-          /></a>
-          <a href="#target71"
-            ><img src="./images/denari/arcani minori-denari-05.jpg" alt=""
-          /></a>
-          <a href="#target72"
-            ><img src="./images/denari/arcani minori-denari-06.jpg" alt=""
-          /></a>
-          <a href="#target73"
-            ><img src="./images/denari/arcani minori-denari-07.jpg" alt=""
-          /></a>
-          <a href="#target74"
-            ><img src="./images/denari/arcani minori-denari-08.jpg" alt=""
-          /></a>
-          <a href="#target75"
-            ><img src="./images/denari/arcani minori-denari-09.jpg" alt=""
-          /></a>
-          <a href="#target76"
-            ><img src="./images/denari/arcani minori-denari-10.jpg" alt=""
-          /></a>
-          <a href="#target77"
-            ><img src="./images/denari/arcani minori-denari-11.jpg" alt=""
-          /></a>
-          <a href="#target78"
-            ><img src="./images/denari/arcani minori-denari-12.jpg" alt=""
-          /></a>
-          <a href="#target79"
-            ><img src="./images/denari/arcani minori-denari-13.jpg" alt=""
-          /></a>
-          <a href="#target80"
-            ><img src="./images/denari/arcani minori-denari-14.jpg" alt=""
-          /></a>
-          <!-- <a href="#target81"
+            <a href="#target67"
+              ><img src="./images/denari/arcani minori-denari-01.jpg" alt=""
+            /></a>
+            <a href="#target68"
+              ><img src="./images/denari/arcani minori-denari-02.jpg" alt=""
+            /></a>
+            <a href="#target69"
+              ><img src="./images/denari/arcani minori-denari-03.jpg" alt=""
+            /></a>
+            <a href="#target70"
+              ><img src="./images/denari/arcani minori-denari-04.jpg" alt=""
+            /></a>
+            <a href="#target71"
+              ><img src="./images/denari/arcani minori-denari-05.jpg" alt=""
+            /></a>
+            <a href="#target72"
+              ><img src="./images/denari/arcani minori-denari-06.jpg" alt=""
+            /></a>
+            <a href="#target73"
+              ><img src="./images/denari/arcani minori-denari-07.jpg" alt=""
+            /></a>
+            <a href="#target74"
+              ><img src="./images/denari/arcani minori-denari-08.jpg" alt=""
+            /></a>
+            <a href="#target75"
+              ><img src="./images/denari/arcani minori-denari-09.jpg" alt=""
+            /></a>
+            <a href="#target76"
+              ><img src="./images/denari/arcani minori-denari-10.jpg" alt=""
+            /></a>
+            <a href="#target77"
+              ><img src="./images/denari/arcani minori-denari-11.jpg" alt=""
+            /></a>
+            <a href="#target78"
+              ><img src="./images/denari/arcani minori-denari-12.jpg" alt=""
+            /></a>
+            <a href="#target79"
+              ><img src="./images/denari/arcani minori-denari-13.jpg" alt=""
+            /></a>
+            <a href="#target80"
+              ><img src="./images/denari/arcani minori-denari-14.jpg" alt=""
+            /></a>
+            <!-- <a href="#target81"
             ><img src="./images/denari/arcani minori-denari-15.png" alt=""
           /></a> -->
-        </div>
-        <div class="lightbox">
-          <div class="target" id="target67">
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-01.jpg" alt="" />
-            </div>
-            <a href="#target68" title="next" class="fas nav"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
           </div>
-          <div class="target" id="target68">
-            <a href="#target67" title="previous" class="fas nav"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-02.jpg" alt="" />
+          <div class="lightbox">
+            <div class="target" id="target67">
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-01.jpg" alt="" />
+              </div>
+              <a href="#target68" title="next" class="fas nav"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target69" title="next" class="fas nav"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target69">
-            <a href="#target68" title="previous" class="fas nav"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-03.jpg" alt="" />
+            <div class="target" id="target68">
+              <a href="#target67" title="previous" class="fas nav"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-02.jpg" alt="" />
+              </div>
+              <a href="#target69" title="next" class="fas nav"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target70" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target70">
-            <a href="#targe69" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-04.jpg" alt="" />
+            <div class="target" id="target69">
+              <a href="#target68" title="previous" class="fas nav"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-03.jpg" alt="" />
+              </div>
+              <a href="#target70" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target71" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target71">
-            <a href="#targe70" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-05.jpg" alt="" />
+            <div class="target" id="target70">
+              <a href="#targe69" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-04.jpg" alt="" />
+              </div>
+              <a href="#target71" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target72" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target72">
-            <a href="#target71" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-06.jpg" alt="" />
+            <div class="target" id="target71">
+              <a href="#targe70" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-05.jpg" alt="" />
+              </div>
+              <a href="#target72" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target73" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target73">
-            <a href="#target74" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-07.jpg" alt="" />
+            <div class="target" id="target72">
+              <a href="#target71" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-06.jpg" alt="" />
+              </div>
+              <a href="#target73" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target74" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target74">
-            <a href="#target73" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-08.jpg" alt="" />
+            <div class="target" id="target73">
+              <a href="#target74" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-07.jpg" alt="" />
+              </div>
+              <a href="#target74" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target75" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target75">
-            <a href="#target74" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-09.jpg" alt="" />
+            <div class="target" id="target74">
+              <a href="#target73" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-08.jpg" alt="" />
+              </div>
+              <a href="#target75" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target76" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target76">
-            <a href="#target75" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-10.jpg" alt="" />
+            <div class="target" id="target75">
+              <a href="#target74" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-09.jpg" alt="" />
+              </div>
+              <a href="#target76" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target77" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target77">
-            <a href="#target77" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-11.jpg" alt="" />
+            <div class="target" id="target76">
+              <a href="#target75" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-10.jpg" alt="" />
+              </div>
+              <a href="#target77" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target78" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target78">
-            <a href="#target67" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-12.jpg" alt="" />
+            <div class="target" id="target77">
+              <a href="#target77" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-11.jpg" alt="" />
+              </div>
+              <a href="#target78" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target79" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target79">
-            <a href="#target78" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-13.jpg" alt="" />
+            <div class="target" id="target78">
+              <a href="#target67" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-12.jpg" alt="" />
+              </div>
+              <a href="#target79" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <a href="#target80" class="fas nav" title="next"
-              ><i class="fa-solid fa-chevron-right"></i
-            ></a>
-          </div>
-          <div class="target" id="target80">
-            <a href="#target79" class="fas nav" title="previous"
-              ><i class="fa-solid fa-chevron-left"></i
-            ></a>
-            <div class="content">
-              <img src="./images/denari/arcani minori-denari-14.jpg" alt="" />
+            <div class="target" id="target79">
+              <a href="#target78" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-13.jpg" alt="" />
+              </div>
+              <a href="#target80" class="fas nav" title="next"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></a>
             </div>
-            <span class="fas">
-              <!-- spacer to keep content centered in the flex container -->
-            </span>
-          </div>
-          <!-- <div class="target" id="target81">
+            <div class="target" id="target80">
+              <a href="#target79" class="fas nav" title="previous"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <div class="content">
+                <img src="./images/denari/arcani minori-denari-14.jpg" alt="" />
+              </div>
+              <span class="fas">
+                <!-- spacer to keep content centered in the flex container -->
+              </span>
+            </div>
+            <!-- <div class="target" id="target81">
             <a href="#target80" class="fas nav" title="previous"
               ><i class="fa-solid fa-chevron-left"></i
             ></a>
@@ -1451,9 +1505,31 @@
             </span>
           </div> -->
 
-          <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
-        </div>
-      </article>
-    </section>
+            <a href="#!" class="close nav"><i class="fa-solid fa-xmark"></i></a>
+          </div>
+        </article>
+      </section>
+    </div>
   </body>
 </html>
+<script>
+  // addEventListener("load", (e) => {
+  //   console.log("ciao");
+  // });
+
+  $(window).on("load", function () {
+    console.log("now ok");
+    $("#loading").hide();
+    $("#test-full").show();
+  });
+  // $(document).ready(function () {
+  //   console.log("ok");
+  //   $("#loading").show();
+  //   $("#test-full").hide();
+  // });
+  // $(window).load(function () {
+  //   console.log("now ok");
+  //   $("#loading").hide();
+  //   $("#test-full").show();
+  // });
+</script>
