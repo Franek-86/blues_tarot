@@ -276,11 +276,13 @@ select {
   padding: 5px;
   font-weight: bold;
   border: 2px solid #7642be;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
   select {
     border: 2px solid #993365 !important;
+    font-size: 0.8rem;
   }
   .section-title {
     margin-left: 12%;
