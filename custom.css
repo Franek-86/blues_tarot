@@ -45,7 +45,7 @@
   border-right: 5px dotted #cf74ad; */
   border-left: 3px dotted #993365;
   border-right: 3px dotted #993365;
-  border-bottom: 3px dotted #993365;
+  /* border-bottom: 3px dotted #993365; */
   content: "";
   z-index: -1;
   position: absolute;
@@ -274,6 +274,7 @@ select {
   background: #ee8244;
   border-radius: 10px;
   padding: 5px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1000px) {
@@ -401,4 +402,42 @@ select {
 }
 section.denari {
   padding-bottom: 5rem;
+}
+
+.scroller {
+  position: fixed;
+  display: grid;
+  place-content: center;
+  /* top: 90vh;
+  left: 90vw; */
+  bottom: 1rem;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #ee8244b9;
+  border: 2px solid #993365;
+  border-radius: 10px;
+  color: #993364b3;
+  animation: test 1.5s infinite;
+}
+
+@keyframes test {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .scroller {
+    top: 90vh;
+    left: 80vw;
+    width: 2.5rem;
+    height: rem;
+  }
 }
