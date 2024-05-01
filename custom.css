@@ -279,6 +279,9 @@ select {
 }
 
 @media screen and (max-width: 1000px) {
+  select {
+    border: 2px solid #993365 !important;
+  }
   .section-title {
     margin-left: 12%;
     width: 35%;
