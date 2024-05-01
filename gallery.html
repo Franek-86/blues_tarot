@@ -65,16 +65,21 @@
     </section>
     <div id="loading" style="display: block"><span class="spinner"></span></div>
     <div id="test-full" style="display: none">
-      <div class="select-container">
-        <p style="color: #111">
-          Questo è un test...Qui potrebbe andare un testo che spiega il motivo
-          della divisione della mostra in categorie di carte e poi si invita a
-          scegliere la galleria da visitare, non so bene come introdurre il
-          fatto che la prima galleria visibile è quella degli arcani maggiori
-          (si puo anche cambiare nel caso)
+      <div class="select-container info-2">
+        <p>
+          Benvenuto nella sezione "<span
+            id="testo-sezione"
+            style="text-transform: capitalize"
+            >Arcani Maggiori</span
+          >" della galleria "Blue Tarot". La mostra si compone di cinque
+          categorie di carte, gli Arcani Maggiori, le Coppe, i Bastoni le Spade
+          e i Denari. Per cambiare la sezione di carte puoi selezionare le
+          diverse categorie dal menu qui in basso.
         </p>
+        <label for="">Seleziona categoria di carte: </label>
         <select name="" id="gallery-select">
           <option value="arcani-maggiori">Arcani maggiori</option>
+          <option value="bastoni">coppe</option>
           <option value="bastoni">bastoni</option>
           <option value="spade">spade</option>
           <option value="denari">denari</option>
@@ -1533,7 +1538,6 @@
   // });
 
   $(window).on("load", function () {
-    console.log("now ok");
     $("#loading").hide();
     $("#test-full").show();
   });
@@ -1550,6 +1554,7 @@
       let check = $("#gallery-select option:selected").val();
       $(".carta").each(function (index) {
         if ($(this).hasClass(check)) {
+          $("#testo-sezione").text(check);
           $(this).show();
         } else {
           $(this).hide();
