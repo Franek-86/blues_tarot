@@ -275,6 +275,7 @@ select {
   border-radius: 10px;
   padding: 5px;
   font-weight: bold;
+  border: 2px solid #7642be;
 }
 
 @media screen and (max-width: 1000px) {
@@ -419,6 +420,9 @@ section.denari {
   border-radius: 10px;
   color: #993364b3;
   animation: test 1.5s infinite;
+}
+.scroller:hover {
+  cursor: pointer;
 }
 
 @keyframes test {
