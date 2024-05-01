@@ -311,10 +311,13 @@ body {
   } */
 }
 @media screen and (max-width: 500px) {
+  .name-container {
+    top: 1.5rem;
+  }
   .text-container {
     left: calc(125px + 0.875rem);
     width: 35vw;
-    top: calc(0.7rem + 4rem);
+    top: calc(0.5rem + 4rem);
   }
   /* .text-container p {
     width: 60vw;
