@@ -283,8 +283,9 @@ p {
     color: #7642be;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
       "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
+
     padding-top: 1rem;
+    font-weight: 400;
     /* line-height: 1.275rem; */
   }
   .info-2 p {
