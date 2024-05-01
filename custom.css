@@ -435,9 +435,9 @@ section.denari {
 
 @media screen and (max-width: 700px) {
   .scroller {
-    top: 90vh;
-    left: 80vw;
+    bottom: 1rem;
+    right: 1rem;
     width: 2.5rem;
-    height: rem;
+    height: 2.5rem;
   }
 }
