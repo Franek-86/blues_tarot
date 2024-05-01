@@ -314,7 +314,7 @@ body {
   .text-container {
     left: calc(125px + 0.875rem);
     width: 35vw;
-    top: calc(1rem + 4rem);
+    top: calc(0.7rem + 4rem);
   }
   /* .text-container p {
     width: 60vw;
