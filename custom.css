@@ -421,9 +421,10 @@ section.denari {
   background-color: #ee8244b9;
   border: 2px solid #993365;
   border-radius: 10px;
-  color: #993364b3;
+  color: #993365;
   animation: test 1.5s infinite;
 }
+
 .scroller:hover {
   cursor: pointer;
 }

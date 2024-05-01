@@ -25,7 +25,8 @@
     <!-- <article class="gallery-nav">
       <div class="test-nav">qui</div>
     </article> -->
-    <a href="#top"></a><div class="scroller"><i class="fa-solid fa-angles-up"></i></div></a>
+
+   <a href="#top" style="color: #993365; margin: 0;"><div class="scroller"> <i class="fa-solid fa-angles-up"></i></div></a>
     <div class="background-container"></div>
 
     <section class="header">
@@ -77,7 +78,8 @@
           cambiare la sezione di carte puoi selezionare le diverse categorie dal
           menu qui in basso.
         </p>
-        <label id="top" for="gallery-select">Seleziona categoria: </label>
+        <div id="top" style="padding-bottom: 1rem;"></div>
+        <label for="gallery-select">Seleziona categoria: </label>
         <select name="gallery-select" id="gallery-select">
           <option value="arcani-maggiori">Arcani maggiori</option>
           <option value="coppe">Coppe</option>
@@ -1576,9 +1578,10 @@
 
     let test = $("#gallery-select option:selected").val();
     console.log(test);
-    $(".scroller").on("click", function () {
-      $(window).scrollTop("#top");
-          // $(window).animate({scrollTop:$("#top").offset().top},'slow');
-    });
+    // $(".scroller").on("click", function (e) {
+    //   e.preventDefault()
+    //   // $(window).scrollTop("#test-5");
+    //       $(window).animate({scrollTop:$("#top").offset().top},'slow');
+    // });
   });
 </script>
