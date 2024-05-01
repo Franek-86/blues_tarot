@@ -26,7 +26,7 @@
       <div class="test-nav">qui</div>
     </article> -->
 
-   <a href="#top" style="color: #993365; margin: 0;"><div class="scroller"> <i class="fa-solid fa-angles-up"></i></div></a>
+   <a class="scroller-container" href="#top" style="color: #993365; margin: 0;"><div class="scroller"> <i class="fa-solid fa-angles-up"></i></div></a>
     <div class="background-container"></div>
 
     <section class="header">
@@ -1548,6 +1548,22 @@
 
   $(document).ready(function () {
     $(".scroller").css("display", "none");
+
+    $(".scroller-container").on("click", function(e){
+      e.preventDefault()
+      console.log('salve');
+      var hash = this.hash
+      $('html, body').animate({
+        scrollTop:$(hash).offset().top
+      },800)
+    })
+
+
+
+
+
+
+
     $(".carta").each(function (index) {
       if ($(this).hasClass("arcani-maggiori")) {
         $(this).show();
