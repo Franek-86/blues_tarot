@@ -257,13 +257,13 @@ body {
   }
 }
 .fullName-container {
-  font-family: "Myriad Pro", sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
   position: absolute;
   top: 0;
   height: 120%;
   width: 27rem;
   font-size: 2.06rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
 }
 @media screen and (max-width: 1000px) {
   .fullName-container {
@@ -271,6 +271,7 @@ body {
     width: 13.75rem;
     font-size: 1rem;
     top: -10px;
+    line-height: 2.7rem;
   }
   .name-container {
     height: 1.2rem;
