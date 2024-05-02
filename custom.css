@@ -181,6 +181,10 @@
   .museo-civico-container {
     height: 5rem;
   }
+  .museo-civico {
+    padding: 0 !important;
+    padding-bottom: 3rem !important;
+  }
 }
 /* @media screen and (max-width: 1000px) {
   .background-container {
