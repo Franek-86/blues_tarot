@@ -526,9 +526,9 @@ h4 {
 }
 .name-container {
   position: absolute;
-  top: 0;
+  top: 3px;
   width: 90%;
-  height: 100%;
+  height: 77%;
   z-index: 0;
 }
 .fullName {
@@ -714,7 +714,7 @@ h4 {
   content: "";
   position: absolute;
   left: 8%;
-  height: 5rem;
+  height: 7rem;
   width: 5px;
   background-color: #f49a98ba;
   /* transform: translate(3rem, -15%); */
@@ -723,7 +723,7 @@ h4 {
   content: "";
   position: absolute;
   right: 8%;
-  height: 5rem;
+  height: 7rem;
   width: 5px;
   background-color: #f49a98ba;
 }
@@ -756,6 +756,9 @@ h4 {
   }
   .info-text {
     padding: 2rem;
+  }
+  .museo-civico-text {
+    font-size: 1.5rem;
   }
 }
 .end-footer-other {
@@ -936,6 +939,12 @@ h4 {
 @media screen and (max-width: 700px) {
   .under-text {
     font-size: 1rem;
+  }
+  .museo-civico-text {
+    font-size: 1.2rem;
+  }
+  .street {
+    display: block;
   }
 }
 
