@@ -633,9 +633,15 @@ h4 {
     width: 78%;
   }
   .fullName {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
+@media screen and(max-width: 500px) {
+  .fullName {
+    font-size: 0.8rem;
+  }
+}
+
 .museo-civico-container {
   position: relative;
   display: grid;
