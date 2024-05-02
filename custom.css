@@ -635,6 +635,9 @@ h4 {
   .fullName {
     font-size: 2rem;
   }
+  .info-text {
+    padding: 0;
+  }
 }
 @media screen and(max-width: 500px) {
   .fullName {
@@ -761,7 +764,7 @@ h4 {
     width: 200px !important;
   }
   .info-text {
-    padding: 2rem;
+    padding: 1rem;
   }
   .museo-civico-text {
     font-size: 1.5rem;
