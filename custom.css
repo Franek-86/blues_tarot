@@ -633,19 +633,22 @@ h4 {
     width: 78%;
   }
   .fullName {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .info-text {
     padding: 0;
   }
 }
-@media screen and(max-width: 500px) {
+@media screen and (max-width: 380px) {
   .fullName {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
   .fullName-container {
-    line-height: 1.8rem;
+    line-height: 1.9rem;
   }
+  /* .name-container {
+    width: 97%;
+  } */
 }
 
 .museo-civico-container {
