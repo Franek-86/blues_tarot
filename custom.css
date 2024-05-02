@@ -143,6 +143,7 @@
     height: 5rem;
   }
 }
+
 @media screen and (max-width: 1000px) {
   .second {
     width: 100%;
@@ -174,6 +175,11 @@
     margin-top: 1.8rem;
 
     font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .museo-civico-container {
+    height: 5rem;
   }
 }
 /* @media screen and (max-width: 1000px) {
