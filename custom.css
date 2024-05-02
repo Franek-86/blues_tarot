@@ -177,15 +177,7 @@
     font-size: 0.9rem;
   }
 }
-@media screen and (max-width: 350px) {
-  .museo-civico-container {
-    height: 5rem;
-  }
-  .museo-civico {
-    padding: 0 !important;
-    padding-bottom: 3rem !important;
-  }
-}
+
 /* @media screen and (max-width: 1000px) {
   .background-container {
     width: 85vw;
@@ -357,7 +349,15 @@ select {
     padding-top: 3px !important;
   }
 }
-
+@media screen and (max-width: 350px) {
+  .museo-civico-container {
+    height: 5rem !important;
+  }
+  .museo-civico {
+    padding: 0 !important;
+    padding-bottom: 3rem;
+  }
+}
 /* title */
 .text-section-title {
   position: absolute;
