@@ -232,9 +232,9 @@
   .info-3 {
     flex-direction: column;
   }
-  /* .info-pic {
-    display: none;
-  } */
+  .info-pic {
+    margin-top: 1rem;
+  }
 }
 p {
   margin-bottom: 1rem;
@@ -966,9 +966,6 @@ h4 {
   font-size: 1.5rem;
 }
 @media screen and (max-width: 700px) {
-  .under-text {
-    font-size: 1rem;
-  }
   .museo-civico-text {
     font-size: 0.957rem;
     width: 78%;
@@ -1064,4 +1061,15 @@ h4 {
   height: 5rem;
   background: url("./images/loghi/LOGO_BARI_NEVERENDS-01.jpg") center/contain
     no-repeat;
+}
+
+.under-text p {
+  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 700px) {
+  .under-text p {
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+  }
 }
