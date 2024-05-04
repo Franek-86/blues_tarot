@@ -123,7 +123,7 @@
   width: 80%;
   left: 9%;
   height: 70%;
-  z-index: 0;
+  z-index: -1;
 }
 .subtitle {
   margin-bottom: 0;
@@ -141,6 +141,9 @@
     min-width: 350px;
     width: 95vw;
     height: 5rem;
+  }
+  .third {
+    z-index: 0;
   }
 }
 
@@ -1083,4 +1086,8 @@ h4 {
   background-color: #993365;
   border-radius: 100%;
   border: 3px solid #ee8244;
+}
+section.header {
+  position: relative;
+  z-index: 2;
 }
