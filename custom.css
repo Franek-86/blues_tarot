@@ -1033,7 +1033,12 @@ h4 {
     font-size: 1rem;
   }
 }
-
+@media screen and (max-width: 500px) {
+  .under-text p {
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+  }
+}
 /* test-piano */
 /* .test-piano {
   border: 1px solid blue;
