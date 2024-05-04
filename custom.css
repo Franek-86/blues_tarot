@@ -1009,8 +1009,8 @@ h4 {
 }
 .tamburi-left {
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 12rem;
+  left: -5rem;
 }
 .tamburi-right {
   position: absolute;
@@ -1032,6 +1032,10 @@ h4 {
   .big-ball-first {
     display: none;
   }
+  .big-ball-first,
+  .big-ball-third {
+    display: none;
+  }
 }
 .big-ball-second {
   position: relative;
@@ -1048,7 +1052,7 @@ h4 {
   height: 30px;
   background-color: transparent;
   bottom: -3rem;
-  left: 1rem;
+  left: 3rem;
   border: 5px solid #b0ceea;
   border-radius: 100%;
   /* border-radius: 100%; */
@@ -1057,7 +1061,8 @@ h4 {
 .small-ball-3,
 .small-ball-4,
 .small-ball-5,
-.small-ball-6 {
+.small-ball-6,
+.small-ball-7 {
   position: absolute;
   top: 2.5rem;
   left: -5px;
@@ -1069,7 +1074,7 @@ h4 {
 }
 .big-ball-third {
   position: absolute;
-  top: 3rem;
+  top: 8rem;
   left: -2rem;
   background-color: transparent;
   width: 140px;
