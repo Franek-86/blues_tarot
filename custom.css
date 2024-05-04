@@ -1107,3 +1107,33 @@ h4 {
     font-size: 1rem;
   }
 }
+
+/* test-piano */
+/* .test-piano {
+  border: 1px solid blue;
+} */
+.piano-pic {
+  /* border: 1px solid red; */
+  background: url("./strumenti/blues\ tarot-figure\ x\ website-04.png")
+    center/cover;
+  width: 20rem;
+  height: 6rem;
+}
+@media screen and (max-width: 700px) {
+  .piano-pic {
+    /* border: 1px solid red; */
+    background: url("./strumenti/blues\ tarot-figure\ x\ website-04.png")
+      center/contain no-repeat;
+    width: 15rem;
+    /* height: 6rem; */
+  }
+}
+@media screen and (max-width: 500px) {
+  .piano-pic {
+    /* border: 1px solid red; */
+    background: url("./strumenti/blues\ tarot-figure\ x\ website-04.png")
+      center/contain no-repeat;
+    width: 10rem;
+    /* height: 6rem; */
+  }
+}
