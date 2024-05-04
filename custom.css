@@ -222,6 +222,9 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .background-container {
+    width: 90vw;
+  }
   .info {
     font-size: 1rem;
   }
@@ -510,12 +513,20 @@ ul li {
   list-style-type: none;
   margin-bottom: 0.5rem;
 }
+
 @media screen and (max-width: 1000px) {
   .info-3 {
     width: 80vw;
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 700px) {
+  .info-3 {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
+
 h4 {
   text-transform: capitalize;
   margin-bottom: 0.5rem;
@@ -626,6 +637,12 @@ h4 {
 @media screen and (max-width: 1000px) {
   .museo-civico {
     width: 80vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .museo-civico {
+    width: 90vw;
     margin: 0 auto;
   }
 }
