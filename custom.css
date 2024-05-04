@@ -209,7 +209,12 @@
 
 @media screen and (min-width: 1000px) {
   .info {
-    display: none;
+    width: 70vw;
+    margin-left: 15%;
+    margin-top: 2rem;
+  }
+  .info-2 {
+    margin-top: 0 !important;
   }
   .section-title-first {
     margin-top: 5rem !important;
@@ -227,6 +232,10 @@
   }
   .info {
     font-size: 1rem;
+    width: 90vw;
+  }
+  .info-2 {
+    width: 90vw;
   }
   .info-2 p,
   .info-2 label {
@@ -334,6 +343,9 @@ select {
 @media screen and (max-width: 700px) {
   .section-title {
     width: 50%;
+  }
+  .info-2 {
+    width: 90vw;
   }
 }
 @media screen and (max-width: 500px) {
