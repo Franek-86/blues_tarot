@@ -695,7 +695,7 @@ h4 {
     padding: 0;
   }
 }
-@media screen and (max-width: 380px) {
+/* @media screen and (max-width: 380px) {
   .fullName {
     font-size: 1.5rem;
     top: 3px;
@@ -703,7 +703,7 @@ h4 {
   .fullName-container {
     line-height: 1.8rem;
   }
-}
+} */
 .name-container {
   height: 100%;
   width: 14.5rem;
