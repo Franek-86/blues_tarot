@@ -838,6 +838,12 @@ h4 {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 500px) {
+  .under-section {
+    width: 90vw;
+    margin: 0 auto;
+  }
+}
 .end-footer-other {
   position: absolute;
   width: 22rem;
