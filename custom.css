@@ -127,13 +127,18 @@
 }
 .subtitle {
   margin-bottom: 0;
-  font-family: "Myriad Pro", sans-serif;
+  /* font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-weight: 600;
   color: #993365;
   text-align: center;
   margin-top: 3.25rem;
   font-size: larger;
   font-size: 2rem;
+
+  font-family: "Myriad Pro";
+  /* font-weight: 400; */
+  font-style: normal;
 }
 
 @media screen and (max-width: 1000px) {
@@ -244,9 +249,7 @@
   .info-2 label {
     font-size: 1rem;
   }
-  .info-3 {
-    flex-direction: column;
-  }
+
   .info-pic {
     margin-top: 1rem;
   }
@@ -535,16 +538,24 @@ ul li {
     width: 80vw;
     margin: 0 auto;
   }
+  .info-3 {
+    flex-direction: column;
+  }
+  .info-pic {
+    margin-top: 2rem;
+  }
 }
 @media screen and (max-width: 700px) {
   .info-3 {
     width: 90vw;
     margin: 0 auto;
   }
+  .info-pic {
+    margin-top: 1rem;
+  }
 }
 
 h4 {
-  text-transform: capitalize;
   margin-bottom: 0.5rem;
 }
 .siti {
@@ -556,6 +567,7 @@ h4 {
 /* name */
 .fullName-container {
   font-family: "Arial Narrow", Arial, sans-serif;
+
   position: relative;
   top: 0;
 
@@ -563,7 +575,7 @@ h4 {
 }
 .name-container {
   position: absolute;
-  top: 3px;
+  top: -1px;
   width: 90%;
   height: 77%;
   z-index: 0;
@@ -648,9 +660,10 @@ h4 {
     "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .museo-civico-text {
-  font-family: "Arial Narrow", sans-serif;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.8rem;
-  font-weight: bold;
+
   position: relative;
   width: 80%;
 }
@@ -714,63 +727,63 @@ h4 {
 }
 .first-footer {
   width: 95%;
-  height: 10%;
+  height: 5%;
   background-color: #f49a98ba;
   margin-left: 5%;
 }
 .second-footer {
   width: 100%;
-  height: 10%;
+  height: 15%;
   background-color: transparent;
 }
 .third-footer {
   width: 95%;
-  height: 10%;
+  height: 5%;
   background-color: #f49a98ba;
   margin-left: 5%;
 }
 .forth-footer {
   width: 100%;
-  height: 10%;
+  height: 15%;
   background-color: transparent;
 }
 .fifth-footer {
   width: 95%;
-  height: 10%;
+  height: 5%;
   background-color: #f49a98ba;
   margin-left: 5%;
 }
 .sixth-footer {
   width: 100%;
-  height: 10%;
+  height: 15%;
   background-color: transparent;
 }
 
 .seventh-footer {
   width: 100%;
-  height: 10%;
+  height: 5%;
   background-color: #f49a98ba;
 }
 .eight-footer {
   width: 100%;
-  height: 10%;
+  height: 15%;
   background-color: transparent;
 }
 
 .ninth-footer {
   width: 100%;
-  height: 10%;
+  height: 5%;
   background-color: #f49a98ba;
 }
 .tenth-footer {
   width: 100%;
-  height: 10%;
+  height: 15%;
   background-color: transparent;
 }
 
 .eleventh-footer {
   width: 100%;
-  height: 10%;
+  height: 5%;
   background-color: #f49a98ba;
 }
 .museo-civico-container::before {
@@ -867,7 +880,7 @@ h4 {
 }
 @media screen and (max-width: 700px) {
   .museo-civico-text {
-    font-size: 0.957rem;
+    font-size: 1.2rem;
     width: 78%;
   }
 
@@ -891,76 +904,117 @@ h4 {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+/* .logo-container-9 {
+  width: 10rem;
+  height: 5rem;
+  background: url("./images/loghi/logo\ COPYNET.png") center/contain no-repeat;
+} */
 .logo-container-1 {
   width: 10rem;
   height: 5rem;
-  background: url("./images/loghi/logo\ COMUNE\ BARI.jpg") center/contain
-    no-repeat;
+  background: url("./loghi/logo\ comune\ bari\ e\ neverends-01.png")
+    center/contain no-repeat;
 }
-.logo-container-2 {
+/* .logo-container-2 {
   width: 10rem;
   height: 5rem;
   background: url("./images/loghi/LOGO_BARI_NEVERENDS-01.jpg") center/contain
     no-repeat;
-}
+} */
 .logo-container-3 {
-  width: 10rem;
+  width: 11rem;
   height: 5rem;
   background: url("./images/loghi/Logo\ MUSEO\ CIVICO.png") center/contain
     no-repeat;
 }
 .logo-container-4 {
-  width: 10rem;
+  width: 11rem;
   height: 5rem;
   background: url("./images/loghi/logo\ VERNER.jpg") center/contain no-repeat;
 }
-.logo-container-6 {
-  width: 10rem;
+.logo-container-5 {
+  width: 11rem;
   height: 5rem;
-  background: url("./images/loghi/logo\ ACUSTICA.png") center/contain no-repeat;
-}
-.logo-container-11 {
-  width: 10rem;
-  height: 5rem;
-  background: url("./images/loghi/logo\ BEPPE\ CONCORDIA.png") center/contain
+  background: url("./loghi/Logo_Fondazione_Dioguardi.png") center/contain
     no-repeat;
 }
-
-.logo-container-9 {
-  width: 10rem;
+.logo-container-6 {
+  width: 11rem;
   height: 5rem;
-  background: url("./images/loghi/logo\ COPYNET.png") center/contain no-repeat;
+  background: url("./loghi/LOGO\ TECNO\ 3\ con\ bandiera.jpg") center/contain
+    no-repeat;
 }
-.logo-container-5 {
-  width: 10rem;
-  height: 5rem;
-  background: url("./images/loghi/logo\ MAST.png") center/contain no-repeat;
-}
-
 .logo-container-7 {
   width: 10rem;
   height: 5rem;
-  background: url("./images/loghi/logo\ SUPERTECNICA.jpg") center/contain
-    no-repeat;
+  background: url("./loghi/logo\ H2O-2024-1.png") center/contain no-repeat;
 }
 .logo-container-8 {
-  width: 10rem;
+  width: 9rem;
   height: 5rem;
-  background: url("./images/loghi/LOGO\ TECNO\ 3\ con\ bandiera.jpg")
-    center/contain no-repeat;
+  background: url("./loghi/logo\ ALTRO\ E\ BIO.jpg") center/contain no-repeat;
 }
-
 .logo-container-10 {
   width: 10rem;
   height: 5rem;
-  background: url("./images/loghi/LOGO_BARI_NEVERENDS-01.jpg") center/contain
-    no-repeat;
+  background: url("./loghi/logo\ ATELIER27.png") center/contain no-repeat;
 }
 .logo-container-11 {
+  width: 7rem;
+  height: 5rem;
+  background: url("./loghi/logo\ NATURASI\ lella.jpg") center/contain no-repeat;
+}
+
+.logo-container-12 {
+  width: 6rem;
+  height: 5rem;
+  background: url("./loghi/logo\ SUPERTECNICA.jpg") center/contain no-repeat;
+}
+.logo-container-13 {
+  width: 7rem;
+  height: 5rem;
+  background: url("./loghi/logo\ COPYNET.png") center/contain no-repeat;
+}
+.logo-container-14 {
   width: 10rem;
   height: 5rem;
-  background: url("./images/loghi/LOGO_BARI_NEVERENDS-01.jpg") center/contain
-    no-repeat;
+  background: url("./loghi/logo\ RASCIASOUND.png") center/contain no-repeat;
+}
+.logo-container-15 {
+  width: 7rem;
+  height: 5rem;
+  background: url("./loghi/logo\ ACUSTICA.png") center/contain no-repeat;
+}
+.logo-container-16 {
+  width: 9rem;
+  height: 5rem;
+  background: url("./loghi/logo\ ARTIEMIELE.png") center/contain no-repeat;
+}
+.logo-container-17 {
+  width: 6rem;
+  height: 5rem;
+  background: url("./loghi/logo-torrevento.png") center/contain no-repeat;
+}
+.logo-container-18 {
+  width: 6rem;
+  height: 5rem;
+  background: url("./loghi/logo\ BEPPE\ CONCORDIA.png") center/contain no-repeat;
+}
+.logo-container-19 {
+  width: 4rem;
+  height: 5rem;
+  background: url("./loghi/logo\ MAMAPULIA.jpg") center/contain no-repeat;
+}
+.logo-container-20 {
+  width: 5rem;
+  height: 5rem;
+  background: url("./loghi/logo\ LAVORAZIONE\ E\ SERVICE-bianco-02-2.png")
+    center/contain no-repeat;
+}
+.logo-container-21 {
+  width: 7rem;
+  height: 5rem;
+  background: url("./loghi/logo\ LIBRERIA\ ROMA.png") center/contain no-repeat;
 }
 
 .under-text p {
@@ -1029,7 +1083,9 @@ h4 {
   width: 120px;
   height: 120px;
   /* background-color: #993365; */
-  background-color: #f5999a;
+
+  background-color: #993365;
+  border: 3px solid #f5999a;
   border-radius: 100%;
 }
 @media screen and (max-width: 1000px) {
@@ -1090,4 +1146,7 @@ h4 {
 section.header {
   position: relative;
   z-index: 2;
+}
+.info-text-highlight {
+  font-size: 1.2rem;
 }
