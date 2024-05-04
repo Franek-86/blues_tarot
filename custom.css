@@ -129,16 +129,15 @@
   margin-bottom: 0;
   /* font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
     "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-weight: 600;
+
   color: #993365;
   text-align: center;
   margin-top: 3.25rem;
-  font-size: larger;
-  font-size: 2rem;
 
   font-family: "Myriad Pro";
-  /* font-weight: 400; */
+  font-weight: 400;
   font-style: normal;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -178,13 +177,13 @@
     font-size: 1.35rem;
   }
 }
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
   .subtitle {
     margin-top: 1.8rem;
 
     font-size: 0.9rem;
   }
-}
+} */
 
 /* @media screen and (max-width: 1000px) {
   .background-container {
