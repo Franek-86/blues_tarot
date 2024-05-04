@@ -230,7 +230,7 @@
     font-size: 1rem;
   }
   .info-3 {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   /* .info-pic {
     display: none;
@@ -655,6 +655,7 @@ h4 {
 }
 .name-container {
   height: 69%;
+  width: 14.5rem;
 }
 /* .name-container {
     width: 100%;
@@ -763,6 +764,9 @@ h4 {
 
 .under-teeth {
   width: 20rem;
+}
+.info-pic {
+  padding: 1rem;
 }
 @media screen and (max-width: 1000px) {
   .under-section {
@@ -972,6 +976,9 @@ h4 {
 
   .street {
     display: block;
+  }
+  .name-container {
+    width: 13rem;
   }
 }
 
