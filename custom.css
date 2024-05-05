@@ -929,13 +929,14 @@ h4 {
 .logo-container-3 {
   width: 11rem;
   height: 5rem;
-  background: url("./images/loghi/Logo\ MUSEO\ CIVICO.png") center/contain
-    no-repeat;
+  background: url("https://www.museocivicobari.it/wp-content/uploads/2015/11/MARCHIO-DEFINITIVO_270_sito.png")
+    center/contain no-repeat;
 }
 .logo-container-4 {
   width: 11rem;
   height: 5rem;
-  background: url("./images/loghi/logo\ VERNER.jpg") center/contain no-repeat;
+  background: url("https://www.ernestverner.it/wp-content/uploads/2018/10/logo-biancoX2.png")
+    center/contain no-repeat;
 }
 .logo-container-5 {
   width: 11rem;
