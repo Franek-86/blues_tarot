@@ -22,10 +22,11 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="loading" style="display: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1000; display: grid; place-items: center;"><span class="spinner-2"></span></div>
     <!-- <article class="gallery-nav">
       <div class="test-nav">qui</div>
     </article> -->
-
+<div id="page" style="display: none;">
     <div class="background-container" style="border: none;"></div>
 
     <section class="header">
@@ -76,27 +77,10 @@
           </a>
 
 
-<!-- Giovedì 16, ore 18.15   Vernissage
-Saluti
-Assessorato alla Cultura Comune di Bari
-Dialogano con l’artista
-Lucia Anelli, critica d’arte
-Patrizia Calò, bibliotecaria
-Rosa Anna Pucciarelli, docente Accademia di Belle Arti di Bari
-Venerdì 17, ore 18.15
-Dialogano con l’artista
-Roberta Arrigoni, formatrice ed esperta di tarocchi
-Daniele Laganà, presidente Associazione Ilcervobianco, Napoli
-Sabato 18, ore 18.15
-Dialogano con l’artista
-Marienza Benedetto, docente Università di Bari
-Grazia Giardiello, docente Civica Scuola di Cinema Luchino Visconti di Milano e sceneggiatrice
-Daniele Pegorari, docente Università di Bari
-Domenica 19, ore 18.15.  Finissage
-Fabrizio Versienti dialoga con Pierpaolo Martino
-Momento musicale con Francesco Casalino (chitarra); Paolo Fioretti (chitarra); Giacomo Fronzi (piano); Pierpaolo Martino (basso); Maria Martinelli (voce); Angelo Pantaleo (percussioni) -->
+
 
           <div class="date">
+                        <h4 style="color: #66cdcc;  font-family:'Myriad Pro';font-weight: 400;font-style: normal; font-size: 1.5rem;">A cura di </h4>
             <h4 style="color: #66cdcc;  font-family:'Myriad Pro';font-weight: 400;font-style: normal; font-size: 1.5rem;">Programma dell'evento</h4>
             <ul>
               <li>
@@ -133,11 +117,11 @@ Momento musicale con Francesco Casalino (chitarra); Paolo Fioretti (chitarra); G
                 <span style="display: block;"><span class="info-text-highlight">Fabrizio Versienti </span><span>dialoga con </span><span class="info-text-highlight">Pierpaolo Martino</span></span>
                 <span style="display: block;">Momento musicale con <span class="info-text-highlight">Francesco Casalino </span>(chitarra);
         <span class="info-text-highlight">Paolo Fioretti </span>(chitarra);
-             </span> <span class="info-text-highlight">Giacomo Fronzi </span>(piano);
-             </span><span class="info-text-highlight">Pierpaolo Martino </span>(basso);
-             </span><span class="info-text-highlight">Maria Martinelli </span>(voce);
-             </span><span class="info-text-highlight">Angelo Pantaleo </span>(percussioni);
-             </span>     </span> 
+             <span class="info-text-highlight">Giacomo Fronzi </span>(piano);
+             <span class="info-text-highlight">Pierpaolo Martino </span>(basso);
+            <span class="info-text-highlight">Maria Martinelli </span>(voce);
+            <span class="info-text-highlight">Angelo Pantaleo </span>(percussioni)
+                  </span> 
 
        <li>
 
@@ -217,7 +201,7 @@ Momento musicale con Francesco Casalino (chitarra); Paolo Fioretti (chitarra); G
     <section class="under-section">
      <div class="under-text">
             <p >Info: amicidiernestverner@gmail.com</p>
-            <p>Webmaster: Francesco Leccese</p>
+            <p>Webmaster: <a style="color: #22c55e; text-decoration: none;" href="https://franekdev-portfolio.netlify.app/">FranekDev</a></p>
      </div>
      <div class="test-piano">
       <div class="piano-pic">
@@ -227,7 +211,7 @@ Momento musicale con Francesco Casalino (chitarra); Paolo Fioretti (chitarra); G
      </div>
 
 
-     </div>
+    
 
     </section>
     <section class="footer-loghi">
@@ -256,8 +240,7 @@ Momento musicale con Francesco Casalino (chitarra); Paolo Fioretti (chitarra); G
             <div class="logo-container-21"></div>
      </section>
 
-    </section>
-    <div id="loading" style="display: block"><span class="spinner"></span></div>
+   </div>
   </body>
 </html>
 <script>
@@ -267,58 +250,15 @@ Momento musicale con Francesco Casalino (chitarra); Paolo Fioretti (chitarra); G
 
   $(window).on("load", function () {
     $("#loading").hide();
-    $("#test-full").show();
+    $("#page").show();
   });
 
-  $(document).ready(function () {
-    $(".scroller").css("display", "none");
+ 
 
-    $(".scroller-container").on("click", function (e) {
-      e.preventDefault();
-      console.log("salve");
-      var hash = this.hash;
-      $("html, body").animate(
-        {
-          scrollTop: $(hash).offset().top,
-        },
-        800
-      );
-    });
 
-    $(".carta").each(function (index) {
-      if ($(this).hasClass("arcani-maggiori")) {
-        $(this).show();
-      } else {
-        $(this).hide();
-      }
-    });
-    $("#gallery-select").on("change", function () {
-      let check = $("#gallery-select option:selected").val();
-      $(".carta").each(function (index) {
-        if ($(this).hasClass(check)) {
-          $("#testo-sezione").text(check);
-          $(this).show();
-        } else {
-          $(this).hide();
-        }
-      });
-    });
 
-    $(window).scroll(function () {
-      // console.log($(this).scrollTop());
-      if ($(this).scrollTop() > 1000) {
-        $(".scroller").fadeIn(500);
-      } else {
-        $(".scroller").fadeOut(500);
-      }
-    });
 
-    let test = $("#gallery-select option:selected").val();
-    console.log(test);
-    // $(".scroller").on("click", function (e) {
-    //   e.preventDefault()
-    //   // $(window).scrollTop("#test-5");
-    //       $(window).animate({scrollTop:$("#top").offset().top},'slow');
-    // });
-  });
+
+
+
 </script>
