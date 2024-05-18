@@ -390,7 +390,7 @@ select {
 .text-section-title {
   position: absolute;
   height: 1.5rem;
-  width: 100%;
+  width: 80%;
   z-index: -1;
 }
 .first-name {
